@@ -1,0 +1,206 @@
+.Navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .Navbar > .nav-logo {
+    font-weight: 700;
+    font-size: 21px;
+    margin: 15px;
+
+  }
+  
+  .Navbar > .nav-items > a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 15px;
+    position: relative;
+    opacity: 0.9;
+  }
+  
+  .Navbar > .nav-items > a:hover {
+    opacity: 1;
+  }
+  
+  .Navbar > .nav-items > a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: all 0.45s;
+  }
+  
+  .Navbar > .nav-items > a:hover::before {
+    width: 100%;
+  }
+  
+  .Navbar > .nav-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 1024px) {
+    .Navbar > .nav-items {
+      position: absolute;
+      top: 60px;
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      left: 0;
+      width: 260px;
+      height: 100%;
+      transform: translateX(-100%);
+      transition: all .45s;
+      z-index: 999;
+    }
+  
+    .Navbar > .nav-items > a::before {
+        background: transparent;
+    }
+  
+    .Navbar > .nav-items.open {
+        transform: translateX(0);
+    }
+  
+    .Navbar > .nav-toggle {
+      display: flex;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .nav-toggle > .bar {
+      position: relative;
+      width: 32px;
+      height: 2px;
+      background: #000;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before,
+    .nav-toggle > .bar::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background: #000;
+      border-radius: 2px;
+      transition: all 0.45s ease-in-out;
+    }
+  
+    .nav-toggle > .bar::before {
+      width: 32px;
+      transform: translateY(-8px);
+      right: 0;
+    }
+  
+    .nav-toggle > .bar::after {
+      width: 32px;
+      transform: translateY(8px);
+    }
+  
+    .nav-toggle.open > .bar {
+        transform: translateX(-40px);
+        background: transparent;
+    }
+  
+    .nav-toggle.open > .bar::before {
+        width: 32px;
+        transform: rotate(45deg) translate(26px, -26px);
+    }
+  
+    .nav-toggle.open > .bar::after {
+      transform: rotate(-45deg) translate(26px, 26px);
+    }
+  
+  
+  }
+
+
+
+  @media (max-width: 1199px){
+    .main-nav ul li .sub-menu {
+        position: static;
+        min-width: 200px;
+        background: 0 0;
+        border: none;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        transform: none;
+        transition: none;
+        display: none;
+    }
+ .main-nav {
+    transform: translateX(0);
+}
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    padding: 10px 15px!important;
+    z-index: 99999;
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    transform: translateX(260px);
+    transition: transform .3s ease-in;
+}
+.main-nav.open{
+    transform: translateX(0px) !important;
+}
+.main-nav>ul {
+    float: none;
+    padding: 25px 10px 25px 0;
+    margin-top: 40px!important;
+}
+.main-nav ul li {
+    display: block;
+    position: relative;
+    padding: 0 20px;
+}
+.main-nav>ul>li>a {
+    font-size: 11px!important;
+    color: #2d373c!important;
+    /* line-height: 35px; */
+    margin: 10px 0;
+}
+  }
+  @media (max-width: 767px){
+  .inner-logo img {
+      width: 100%;
+      max-width: 60%;
+  }
+  .main-nav>ul li {
+    border-bottom: 1px solid #0000009e;
+}
+.main-nav>ul>li+li>.sub-menu {
+    padding-top: 0px !important;
+}
+}
+
+.main-nav ul li a {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+.main-nav ul li a {
+    /* font-size: 12px; */
+    /* color: #000000b0; */
+    /* display: block; */
+    font-weight: 500;
+    text-transform: capitalize;
+    /* text-decoration: none; */
+    font-family:'Inter';
+    transition: all .3s ease-in-out;
+    /* padding: 30.5px 0; */
+    position: relative;
+}
