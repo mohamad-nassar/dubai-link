@@ -1,8 +1,30 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import axios from 'axios';
+import url from '../url';
 function CardPending() {
-
+    const [pack,setPack]=useState({
+        image:"",
+        logo:"",
+        title:"",
+        description:"",
+        price:"",
+    })
+    async function getdestmonth()
+    {
+        const response=await axios.get(`${url.baseURL}/package`);
+        setPack({
+            image:url.mediaURL+"/"+response.data.packmonth.image,
+            logo:url.mediaURL+"/"+response.data.packmonth.logo,
+            title:response.data.packmonth.title,
+            description:response.data.packmonth.title,
+            price:response.data.packmonth.price,
+        })
+    }
+    useEffect(()=>{
+        getdestmonth();
+    },[])
   return (
     <div>
     <div className="container">
