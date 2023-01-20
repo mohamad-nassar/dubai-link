@@ -59,7 +59,7 @@ function CardPending() {
     </div>
 </div>
 <button className="button-fill-primary text-center button-details d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
-<Link  className="text-capitalize" to="/packagedetails">More Details</Link></button>
+<Link  className="text-capitalize" to="/package-details">More Details</Link></button>
     </div>
     
 

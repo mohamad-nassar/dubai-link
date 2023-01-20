@@ -7,7 +7,7 @@ function CardDetailsone() {
     <div className="container">
     <ul className=" breadcrumbb mt-3">
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/tour">Packages</Link></li>
+    <li><Link to="/packages">Packages</Link></li>
     <li className="text-capitalize">Destination <span class="text-small">of the</span> month</li>
 </ul>
 </div>

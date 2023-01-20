@@ -93,7 +93,7 @@ function MoreSectionn() {
         <p className="text-center mt-4 htdr-sections">In collaboration with our partner, The Royal Lifestyle, we facilitate a growing international community of golf enthusiasts by offering equipment and services with unmatched results - the players come first.
         </p>
         <div className="col-md-12 text-lg-center text-center pt-4">
-            <button onClick={<scrollToTop />} className="button-fill-primary update-btn2 slide"> <Link to="/royal">Explore</Link></button>
+            <button onClick={<scrollToTop />} className="button-fill-primary update-btn2 slide"> <Link to="/royal-lifestyle">Explore</Link></button>
             </div>
     </div>
 </div>
@@ -209,7 +209,7 @@ function MoreSectionn() {
                <div className="review-texts">
                <p  className="mobile-p-home">In collaboration with our partner, The Royal Lifestyle, we facilitate a growing international community of golf enthusiasts by offering equipment and services with unmatched results - the players come first.</p>
                <div className="col-lg-12 text-lg-center text-center pt-4">
-                   <Link onClick={<scrollToTop />} to="/royal"> <button className="button-fill-primary update-btn2 update-btn2-mobile text-capitalize">
+                   <Link onClick={<scrollToTop />} to="/royal-lifestyle"> <button className="button-fill-primary update-btn2 update-btn2-mobile text-capitalize">
                        Explore</button></Link>
                    </div>    
            </div>

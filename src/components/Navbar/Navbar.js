@@ -70,9 +70,9 @@ function Navbar() {
     </li>
     <li onClick={<scrollToTop />}><Link className="text-uppercase" to="/sts" onClick={() => setIsOpen(!isOpen)}>STS</Link></li>
     <li onClick={<scrollToTop />}><Link to="/destination" onClick={() => setIsOpen(!isOpen)}>Destination Representation</Link></li>
-    <li onClick={<scrollToTop />}><Link to="/royal" onClick={() => setIsOpen(!isOpen)}>Royal Lifestyle</Link></li>
-    <li onClick={<scrollToTop />}><Link to="/packagepending" onClick={() => setIsOpen(!isOpen)}>Packages</Link></li>
-    <li onClick={<scrollToTop />}><Link to="/contactus" onClick={() => setIsOpen(!isOpen)}>Contact</Link></li>
+    <li onClick={<scrollToTop />}><Link to="/royal-lifestyle" onClick={() => setIsOpen(!isOpen)}>Royal Lifestyle</Link></li>
+    <li onClick={<scrollToTop />}><Link to="/packages" onClick={() => setIsOpen(!isOpen)}>Packages</Link></li>
+    <li onClick={<scrollToTop />}><Link to="/contact" onClick={() => setIsOpen(!isOpen)}>Contact</Link></li>
     <li onClick={<scrollToTop />} className="d-block d-xl-none"><Link to="/map" onClick={() => setIsOpen(!isOpen)}>Map</Link></li>
 </ul>
 <div className="inner-contact-options d-xl-none">

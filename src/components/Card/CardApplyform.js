@@ -48,8 +48,8 @@ Swal.fire({
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
 
-    <li><Link to="/join">Careers</Link></li>
-    <li>Apply</li>
+    <li><Link to="/careers">Careers</Link></li>
+    <li>Apply Now</li>
 </ul>
 </div>
     <div className="row mt-5">

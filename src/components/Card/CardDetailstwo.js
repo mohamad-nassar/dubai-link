@@ -69,7 +69,7 @@ function CardDetailstwo() {
         <span>Osmanlı Sokak</span>
         <p>★★★★</p>
         <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/marmara" className="text-capitalize">More Details</Link>
+        <Link onClick={<scrollToTop />} to="/marmara-hotel" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
@@ -97,7 +97,7 @@ function CardDetailstwo() {
             <span>İnönü Mah, Harbiye Çayırı</span>
             <p>★★★★</p>
             <div className="explore-i d-flex flex-column mt-2">
-            <Link onClick={<scrollToTop />} to="/package" className="text-capitalize">More Details</Link>
+            <Link onClick={<scrollToTop />} to="/elysium-taksim-hotel" className="text-capitalize">More Details</Link>
             <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </div>
         </div>
@@ -127,7 +127,7 @@ function CardDetailstwo() {
                     <span>Gümüşsuyu Mah. İnönü</span>
                     <p>★★★★</p>
                     <div className="explore-i d-flex flex-column mt-2">
-                    <Link onClick={<scrollToTop />} to="/CVK" className="text-capitalize">More Details</Link>
+                    <Link onClick={<scrollToTop />} to="/cvk-hotel" className="text-capitalize">More Details</Link>
                     <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
                     </div>
                 </div>
@@ -155,7 +155,7 @@ function CardDetailstwo() {
             <span>İnönü Mah, Harbiye Çayırı</span>
             <p>★★★★</p>
             <div className="explore-i d-flex flex-column mt-2">
-            <Link onClick={<scrollToTop />} to="/package" className="text-capitalize">More Details</Link>
+            <Link onClick={<scrollToTop />} to="/elysium-taksim-hotel" className="text-capitalize">More Details</Link>
             <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </div>
         </div>

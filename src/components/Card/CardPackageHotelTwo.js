@@ -8,7 +8,7 @@ function CardPackageHotelTwo() {
           <li>
             <a href="/">Home</a>
           </li>
-          <li><Link onClick={<scrollToTop />} to="/packagedetails">Destination <span class="text-small">of the</span> month</Link></li>
+          <li><Link onClick={<scrollToTop />} to="/package-details">Destination <span class="text-small">of the</span> month</Link></li>
           <li>
             <a>CVK Park Bosphorus Hotel</a>
     </li>

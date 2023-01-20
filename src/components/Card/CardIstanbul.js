@@ -7,7 +7,7 @@ function CardIstanbul() {
     <div className="container">
     <ul className=" breadcrumbb mt-5">
     <li><Link to="/">Home</Link></li>
-    <li><Link onClick={<scrollToTop />} to="/packagedetails">Destination <span class="text-small">of the</span> month</Link></li>
+    <li><Link onClick={<scrollToTop />} to="/package-details">Destination <span class="text-small">of the</span> month</Link></li>
     <li>Istanbul</li>
 </ul>
 </div>

@@ -261,7 +261,7 @@ function CardTour() {
 
     <div className="hover-content mt-4">
     <h5>Packages</h5>
-    <button onClick={<scrollToTop />}  className="button-fill-primary update-btn2 slide "> <Link to="/packagepending"> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
+    <button onClick={<scrollToTop />}  className="button-fill-primary update-btn2 slide "> <Link to="/packages"> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
 
     </div>
 </div>

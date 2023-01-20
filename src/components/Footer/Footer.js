@@ -151,7 +151,7 @@ This website uses cookies to enhance the user experience
                             <div className="footer-links">
                                 <ul className="link-list">
                                     <li onClick={<scrollToTop />}><a href="/about">About Us</a></li>
-									<li onClick={<scrollToTop />}><a href="/join">Careers</a></li>
+									<li onClick={<scrollToTop />}><a href="/careers">Careers</a></li>
                             
                                     <li  onClick={<scrollToTop />}><a href="/sitemap">Sitemap</a> </li>
                                 </ul>
@@ -164,9 +164,9 @@ This website uses cookies to enhance the user experience
                                 <div className="footer-links">
                                     <ul className="link-list">
                                     <li onClick={() => {
-                                        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><a href="/contactus">Contact Us</a></li>
-                                                                                    <li onClick={<scrollToTop />}><a href="/terms#" class="d-none">Terms & Conditions</a></li>
-                                                                                    <li onClick={<scrollToTop />}><a href="/privacy#">Privacy Policy</a></li>
+                                        window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}}><a href="/contact">Contact Us</a></li>
+                                                                                    <li onClick={<scrollToTop />}><a href="/terms" class="d-none">Terms & Conditions</a></li>
+                                                                                    <li onClick={<scrollToTop />}><a href="/privacy">Privacy Policy</a></li>
                                                                                
                                                                             </ul>
                                 </div>

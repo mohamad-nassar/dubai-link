@@ -140,7 +140,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase"> VIP Experience </h2>
 <p class="d-block d-md-none text-uppercase">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
 <p className="d-none d-md-block">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
-<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/royal">Explore</Link></button>
+<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/royal-lifestyle">Explore</Link></button>
 </div>
 </div>
 </div>
@@ -340,7 +340,7 @@ data-aos-duration="1500">
 <Link onClick={<scrollToTop />} to="/gte">
 <img  src="assets/images/dubai/gtehome.png" /> 
 </Link>
-<Link onClick={<scrollToTop />} to="/royal">
+<Link onClick={<scrollToTop />} to="/royal-lifestyle">
 <img  src="assets/images/dubai/royalhome.png" /> 
 </Link>
 <Link onClick={<scrollToTop />} to="/sts">

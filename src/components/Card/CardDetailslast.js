@@ -52,8 +52,8 @@ function CardDetailslast() {
 <div className="item">
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
-        <Link onClick={<scrollToTop />} to="/ephesus">
-        <img src="assets/images/dubai/ephesus.jpg" alt="" />
+        <Link onClick={<scrollToTop />} to="/ephesus-and-virgin-mary's-house">
+        <img src="assets/images/dubai/ephesus.png" alt="" />
         </Link>
 
 
@@ -61,9 +61,11 @@ function CardDetailslast() {
 
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/ephesus-and-virgin-mary's-house">
         <h2 className="text-uppercase">Ephesus and Virgin Mary's House Tour </h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/ephesus" className="text-capitalize">More Details</Link>
+        <Link onClick={<scrollToTop />} to="/ephesus-and-virgin-mary's-house" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
@@ -77,14 +79,16 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/Cappadocia" >
-        <img src="assets/images/dubai/capadoc.jpg" alt="" />
+        <img src="assets/images/dubai/capadoc.png" alt="" />
         </Link>
    
 
         </div>
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/Cappadocia" >
         <h2 className="text-uppercase">Cappadocia</h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
         <Link onClick={<scrollToTop />} to="/Cappadocia" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -106,7 +110,9 @@ function CardDetailslast() {
         </div>
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/prince" >
         <h2 className="text-uppercase">Full-Day Princes’ Island Tour </h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
         <Link onClick={<scrollToTop />} to="/prince" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -121,17 +127,19 @@ function CardDetailslast() {
 <div className="item">
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
-        <Link to="/kartep">
-        <img src="assets/images/dubai/kartep.jpg" alt="" />
+        <Link onClick={<scrollToTop />} to="/tour-sapanaca-masukiye-and-kartepe">
+        <img src="assets/images/dubai/kartep.png" alt="" />
         </Link>
    
 
         </div>
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/tour-sapanaca-masukiye-and-kartepe">
         <h2 className="text-uppercase">Full-Day Tour Sapanca, Masukiye and Kartepe</h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/kartep" className="text-capitalize">More Details</Link>
+        <Link onClick={<scrollToTop />} to="/tour-sapanaca-masukiye-and-kartepe" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
@@ -144,17 +152,19 @@ function CardDetailslast() {
 <div className="item">
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
-        <Link onClick={<scrollToTop />} to="/troy">
-        <img src="assets/images/dubai/troy.jpg" alt="" />
+        <Link onClick={<scrollToTop />} to="/troy-tour">
+        <img src="assets/images/dubai/troy.png" alt="" />
         </Link>
    
 
         </div>
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/troy-tour">
         <h2 className="text-uppercase">Troy Tour Day Trip  </h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/troy" className="text-capitalize">More Details</Link>
+        <Link onClick={<scrollToTop />} to="/troy-tour" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
@@ -172,7 +182,7 @@ function CardDetailslast() {
 <div className="item">
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
-        <Link onClick={<scrollToTop />} to="/troy">
+        <Link onClick={<scrollToTop />} to="/hagia-sophia">
         <img src="assets/images/dubai/istanbul.png" alt="" />
         </Link>
    
@@ -180,9 +190,11 @@ function CardDetailslast() {
         </div>
 
         <div className="media-content">
+        <Link onClick={<scrollToTop />} to="/hagia-sophia">
         <h2 className="text-uppercase">Hagia Sophia, Blue Mosque, and Grand Bazaar Tour </h2>
+        </Link>
         <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/istanbul2" className="text-capitalize">More Details</Link>
+        <Link onClick={<scrollToTop />} to="/hagia-sophia" className="text-capitalize">More Details</Link>
         <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
         </div>
     </div>

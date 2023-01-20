@@ -72,7 +72,7 @@ function Cardlogo() {
 
                         <div>
                         <div class="logo-about">
-                        <a href="/royal" onClick={<scrollToTop />}>
+                        <a href="/royal-lifestyle" onClick={<scrollToTop />}>
                         <img class="img-fluid" src="assets/images/dubai/RLF.svg" />
                         </a>
                         </div>

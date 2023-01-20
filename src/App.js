@@ -89,52 +89,52 @@ function App() {
         <Route exact path="/lacantina" element={<LaCantina /> } />
         <Route exact path="/destination" element={<Destination /> } />
         <Route exact path="/sts" element={<Sts /> } />
-        <Route exact path="/royal" element={<Royal /> } />
-        <Route exact path="/contactus" element={<Contact /> } />
+        <Route exact path="/royal-lifestyle" element={<Royal /> } />
+        <Route exact path="/contact" element={<Contact /> } />
         <Route exact path="/tourism" element={<Tourism /> } />
         <Route exact path="/hospitality" element={<Hospitality /> } />
-        <Route exact path="/packagepending" element={<PackagePending /> } />
-        <Route exact path="/packagedetails" element={<PackageDetails /> } />
+        <Route exact path="/packages" element={<PackagePending /> } />
+        <Route exact path="/package-details" element={<PackageDetails /> } />
         <Route exact path="/media" element={<Media /> } />
         <Route exact path="/istanbul" element={<Istanbul /> } />
         <Route exact path="/map" element={<Mapp /> } />
         <Route exact path="/prince" element={<Prince /> } />
-        <Route exact path="/join" element={<Join /> } />
+        <Route exact path="/careers" element={<Join /> } />
         <Route exact path="/position" element={<Position /> } />
         <Route exact path="/accomodation" element={<Accomodation /> } />
         <Route exact path="/clients" element={<Clients /> } />
         <Route exact path="/hotel" element={<Hotel /> } />
-        <Route exact path="/package" element={ <Packages /> } />
-        <Route exact path="/apply" element={ <Apply /> } />
-        <Route exact path="/applytwo" element={ <ApplyTwo /> } />
-        <Route exact path="/applythree" element={ <ApplyThree /> } />
-        <Route exact path="/applyfour" element={ <ApplyFour /> } />
-        <Route exact path="/applyfive" element={ <ApplyFive /> } />
-        <Route exact path="/applysix" element={ <ApplySix /> } />
-        <Route exact path="/applyform" element={ <ApplyForm /> } />
+        <Route exact path="/elysium-taksim-hotel" element={ <Packages /> } />
+        <Route exact path="/sales-manager-gte-dubai" element={ <Apply /> } />
+        <Route exact path="/sales-specialist-gte-dubai" element={ <ApplyTwo /> } />
+        <Route exact path="/senior-business-development-executive-dubai" element={ <ApplyThree /> } />
+        <Route exact path="/senior-business-development-executive-dubai" element={ <ApplyFour /> } />
+        <Route exact path="/sales-manager-gte-cairo" element={ <ApplyFive /> } />
+        <Route exact path="/sales-specialist-gte-cairo" element={ <ApplySix /> } />
+        <Route exact path="/apply-now" element={ <ApplyForm /> } />
         <Route exact path="/room" element={ <Room /> } />
         <Route exact path="/privacy" element={ <Privacy /> } />
         <Route exact path="/terms" element={ <Terms /> } />
         <Route exact path="/quote" element={ <Quote /> } />
         <Route exact path="/armenia" element={ <TabTwo /> } />
-        <Route exact path="/PRAGUE–VIENNA–BUDAPEST" element={ <Tabthree /> } />
+        <Route exact path="/prague–vienna–budapest" element={ <Tabthree /> } />
         <Route exact path="/spain" element={ <Tabfour /> } />
         <Route exact path="/spain&portugal" element={ <TabSpainPort /> } />
-        <Route exact path="/ISTANBUL-CAPPADOCIA–ISTANBUL" element={ <Tabfive /> } />
-        <Route exact path="/BOSNIA&HERZEGOVINA" element={ <Tabsix /> } />
+        <Route exact path="/istanbul-cappadocia–istanbul" element={ <Tabfive /> } />
+        <Route exact path="/bosnia&herzegovina" element={ <Tabsix /> } />
         <Route exact path="/azerbaijan" element={ <Tabazarbijan />} />
 <Route exact path="/sitemap" element={<SiteMap />} />
         <Route exact path="/prince" element={ <Princetwo /> } />  
-          <Route exact path="/istanbul2" element={ <TourIstanbul /> } />
+          <Route exact path="/hagia-sophia" element={ <TourIstanbul /> } />
 
-        <Route exact path="/ephesus" element={ <Princethree /> } />
-        <Route exact path="/kartep" element={ <Princefour /> } />
-        <Route exact path="/troy" element={ <Princefive /> } />
+        <Route exact path="/ephesus-and-virgin-mary's-house" element={ <Princethree /> } />
+        <Route exact path="/tour-sapanaca-masukiye-and-kartepe" element={ <Princefour /> } />
+        <Route exact path="/troy-tour" element={ <Princefive /> } />
         <Route exact path="/Cappadocia" element={ <Princesix /> } />
 
     
-        <Route exact path="/marmara" element={ <Hotelone /> } />
-        <Route exact path="/CVK" element={ <Hoteltwo /> } />
+        <Route exact path="/marmara-hotel" element={ <Hotelone /> } />
+        <Route exact path="/cvk-hotel" element={ <Hoteltwo /> } />
 
       </Routes>   
       <Footer /> 

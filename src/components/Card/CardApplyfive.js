@@ -9,7 +9,7 @@ function CardApplyfive() {
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
 
-    <li><Link to="/join">Careers</Link></li>
+    <li><Link to="/careers">Careers</Link></li>
     <li>Apply</li>
 </ul>
       </div>
