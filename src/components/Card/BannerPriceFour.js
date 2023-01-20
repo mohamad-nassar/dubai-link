@@ -10,7 +10,7 @@ function BannerPrince() {
         <h2 class="bottom-0 text-capitalize back-gray">Full-Day Tour Sapanca, Masukiye and Kartepe </h2>
     </div>
     </div>
-
+    test hello
     </div>
 
     </div>
