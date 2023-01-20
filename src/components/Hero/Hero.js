@@ -84,7 +84,7 @@ className="mySwiper"
 <h2 class="text-capitalize d-none d-md-block text-uppercase">Fine Travel</h2>
 <p class="d-block d-md-none text-uppercase">Experience unforgettable holidays at the best rates.</p>
 <p className=" d-none d-md-block">Experience unforgettable holidays at the best rates.</p>
-<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/tour">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/tour"><button className="button-fill-primary  btn-hero">Explore</button></Link>
 
 
 </div>
@@ -106,7 +106,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase"> Top-notch Booking</h2>
 <p class="d-block d-md-none text-uppercase">Dig into a process of searching, comparing, and booking hotels.</p>
 <p className=" d-none d-md-block">Dig into a process of searching, comparing, and booking hotels.</p>
-<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/tripstick">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/tripstick"><button className="button-fill-primary  btn-hero">Explore</button></Link>
 </div>
 </div>
 </div>
@@ -123,7 +123,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase">First-rate Solution</h2>
 <p class="d-block d-md-none text-uppercase">Access a one-step solution for all your travel needs.</p>
 <p className=" d-none d-md-block">Access a one-step solution for all your travel needs.</p>
-<button className="button-fill-primary btn-hero"><Link onClick={<scrollToTop />} to="/gte">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/gte"><button className="button-fill-primary btn-hero">Explore</button></Link>
 </div>
 </div>
 </div>
@@ -140,7 +140,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase"> VIP Experience </h2>
 <p class="d-block d-md-none text-uppercase">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
 <p className="d-none d-md-block">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
-<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/royal-lifestyle">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/royal-lifestyle"><button className="button-fill-primary  btn-hero">Explore</button></Link>
 </div>
 </div>
 </div>
@@ -157,7 +157,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase">Premium Solution</h2>
 <p class="d-block d-md-none text-uppercase">Discover smart travel solutions and special travel products.</p>
 <p className=" d-none d-md-block">Discover smart travel solutions and special travel products.</p>
-<button className="button-fill-primary btn-hero"><Link onClick={<scrollToTop />} to="/sts">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/sts"><button className="button-fill-primary btn-hero">Explore</button></Link>
 </div>
 </div>
 </div>
@@ -173,7 +173,7 @@ data-aos-duration="1500">
 <h2 class="text-capitalize d-none d-md-block text-uppercase">Luxurious Stay</h2>
 <p class="d-block d-md-none text-uppercase">Enjoy a warm ambience, great facilities, and positive vibes.</p>
 <p className=" d-none d-md-block">Enjoy a warm ambience, great facilities, and positive vibes.</p>
-<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/niu">Explore</Link></button>
+<Link onClick={<scrollToTop />} to="/niu"><button className="button-fill-primary  btn-hero">Explore</button></Link>
 </div>
 </div>
 </div>
