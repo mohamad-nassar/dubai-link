@@ -12,7 +12,7 @@ function BannerPending() {
   {
     const response=await axios.get(`${url.baseURL}/package`);
     setBanner({
-      image:url.mediaURL+"/"+response.data.intro.footer,
+      image:url.mediaURL+"/"+response.data.intro.image,
       logo:url.mediaURL+"/"+response.data.intro.logo
     })
   }
