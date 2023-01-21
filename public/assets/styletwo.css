@@ -32,7 +32,9 @@
     .modal-packages {
         margin-top: 25%;
     }
-
+.post-title{
+    font-size: 20px;
+}
     .button-fill-primary, .button-outlined-primary{
         width: 100%;
     }
@@ -71,7 +73,6 @@
         border:1px solid #fff !important;
         background:transparent;
         padding: 5px 20px;
-        border-radius: 5px;
         margin-top: 3%;
  
     }
@@ -259,9 +260,12 @@ opacity: 1 !important;
 
 
 @media (max-width:767px){
-    .img-logo-home-mobile{
-
-    }
+.blog-box{
+    display: block !important;
+}
+.blog-area img{
+    width: 100%;
+}
     .swiper-button-next, .swiper-rtl .swiper-button-prev{
         color:white !important;
     }
@@ -440,7 +444,7 @@ border-bottom: 1px solid #000;
     ul.breadcrumbb {
         padding: 39px 16px 10px;
         list-style: none;
-        color: #3f9fcef5!important;
+        color: #159BDB;
     }
     .fancy p{
         text-align: justify;
@@ -945,8 +949,8 @@ top:0%;
 
 
   .update-btn2:hover{
-    box-shadow: inset 200px 0 0 0 #3f9fcef5!important;
-    border:1px solid #3f9fcef5!important;
+    box-shadow: inset 250px 0 0 0 #159BDB;
+    border:1px solid #159BDB;
     color:#fff;
     transition: all .5s linear;
 }
@@ -1077,10 +1081,15 @@ span.image.s-img {
 
     background-size: cover;
     background-repeat: no-repeat;
-    height: 688px;
-    display: flex;
+    height: auto;
     align-items: center;
     justify-self: center;
+}
+.blog-btn{
+    margin: 10px 0;
+}
+.blog-area{
+    padding-bottom: 80px;
 }
 .home4-video-area .video-batch {
     max-width: 100%;
@@ -1242,7 +1251,7 @@ max-width: 40%;
     color: #ff7f47;
 }
 .text-turquoise{
-    color:#3f9fcef5!important;
+    color:#159BDB;
 }
 .swiper-slide{
     animation: 1s chevron-enter;
@@ -1512,7 +1521,7 @@ left: 0;;
 transition: all .2s ease-out;
 }
 .color-highlight{
-    color:#3f9fcef5!important;
+    color:#159BDB;
    
 }
 
@@ -1613,9 +1622,7 @@ margin: unset;
 .img-dest-card-1 p{
     color:white;
 }
-.update-btn2{
-width: 200px;
-}
+
 .box-tour .media-content .hover-content i{
 margin-left:10px;
 display: flex;
@@ -1628,9 +1635,10 @@ display: flex;
     color:white !important;
 }
 .update-btn2 a {
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: row-reverse;
+    padding: 4px 0px;
 }
 .update-btn2 a {
     display: flex;
@@ -1871,7 +1879,7 @@ text-transform:capitalize;
     
 
     .feature-content .atwo{
-        color:#3f9fcef5!important;
+        color:#159BDB;
     }
 
     @media (min-width:4000px) {
@@ -2091,4 +2099,53 @@ background-color: #159BDB;
     box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
     overflow: hidden;
     margin-bottom: 30px;
+}
+.blog-quote-box-one {
+    background: #fff;
+    box-shadow: 3px 5px 35px rgb(86 68 169 / 10%);
+    border-radius: 100px 5px 5px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.blog-quote-box-one blockquote {
+    padding: 30px;
+    margin: 0;
+    margin-left: 30px;
+}
+.blog-box{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.blog-box .flex-grow-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog-area h2 , .blog-btn , .blog-area img {
+color:white;
+z-index: 1;
+position: relative;
+}
+.blog-box {
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    z-index: 1;
+    position: relative;
+    background: white;
+    margin: 10px;
+}
+.blog-box .flex-grow-1{
+    padding: 10px;
+}
+.blog-p{
+    z-index: 1;
+    position: relative;
+}
+.update-btn2{
+width: 250px;
+}
+
+.button-fill-round:hover{
+    box-shadow: inset 200px 0 0 0 #159BDB;
+    border:1px solid #159BDB;
+    color:#fff;
+    transition: all .5s linear;
 }

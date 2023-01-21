@@ -60,6 +60,7 @@ import TabSpainPort from './pages/TabSpainPort';
 import SiteMap from './pages/SiteMap';
 import CardIstanbul from './components/Card/CardIstanbul';
 import TourIstanbul from './pages/TourIstanbul';
+import Blog from './pages/Blog';
 import { ToastContainer,toast } from "react-toastify";
 function App() {
   useEffect(() => {
@@ -135,7 +136,7 @@ function App() {
     
         <Route exact path="/marmara-hotel" element={ <Hotelone /> } />
         <Route exact path="/cvk-hotel" element={ <Hoteltwo /> } />
-
+        <Route exact path="/blog" element={ <Blog /> } />
       </Routes>   
       <Footer /> 
     </div>

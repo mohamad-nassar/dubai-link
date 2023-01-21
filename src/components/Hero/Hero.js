@@ -37,264 +37,154 @@ function Hero() {
   };
 
   return (
-    <div className="hero-area hero-style-four">
-      <div className="hero-main-wrapper position-relative d-none d-md-block">
-        <Swiper
-          loop={true}
-          spaceBetween={30}
-          effect={"fade"}
-          navigation={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Autoplay, EffectFade, Navigation, Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content d-block">
-                      <h2 class="text-uppercase d-none d-md-block">
-                        Redefining Hospitality{" "}
-                      </h2>
-                      <p class="text-uppercase d-block d-md-none">
-                        Building the hospitality industry for a better future so
-                        you can discover its wonders with us
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Building the hospitality industry for a better future so
-                        you can discover its wonders with us.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+  
+<div className="hero-area hero-style-four">
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background1})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content">
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        Fine Travel
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Experience unforgettable holidays at the best rates.
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Experience unforgettable holidays at the best rates.
-                      </p>
-                      <button className="button-fill-primary  btn-hero">
-                        <Link onClick={<scrollToTop />} to="/tour">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+ 
+<div className="hero-main-wrapper position-relative d-none d-md-block">
+<Swiper
+loop={true}
+spaceBetween={30}
+effect={"fade"}
+navigation={true}
+autoplay={{
+  delay: 3000,
+  disableOnInteraction: false
+}}
+pagination={{
+  clickable: true,
+}}
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${backgroundstrip})`,
-              }}
-            >
-              <div
-                className="container-fluid"
-                style={{ animation: "down-enter" }}
-              >
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div
-                      className="hero4-content"
-                      data-aos="fade-down"
-                      data-aos-easing="linear"
-                      data-aos-duration="1500"
-                    >
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        {" "}
-                        Top-notch Booking
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Dig into a process of searching, comparing, and booking
-                        hotels.
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Dig into a process of searching, comparing, and booking
-                        hotels.
-                      </p>
-                      <button className="button-fill-primary  btn-hero">
-                        <Link onClick={<scrollToTop />} to="/tripstick">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+modules={[Autoplay, EffectFade, Navigation, Pagination]}
+className="mySwiper"
+>
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content d-block">
+<h2 class="text-uppercase d-none d-md-block">Redefining Hospitality </h2>
+<p class="text-uppercase d-block d-md-none">Building the hospitality industry for a better future so you can discover its wonders with us</p>
+<p className=" d-none d-md-block">Building the hospitality industry for a better future so you can discover its wonders with us.</p>
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${backgroundgte})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content">
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        First-rate Solution
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Access a one-step solution for all your travel needs.
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Access a one-step solution for all your travel needs.
-                      </p>
-                      <button className="button-fill-primary btn-hero">
-                        <Link onClick={<scrollToTop />} to="/gte">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background5})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content">
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        {" "}
-                        VIP Experience{" "}
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Unlock a premium holiday experience with exclusive golf
-                        packages at special rates.
-                      </p>
-                      <p className="d-none d-md-block">
-                        Unlock a premium holiday experience with exclusive golf
-                        packages at special rates.
-                      </p>
-                      <button className="button-fill-primary  btn-hero">
-                        <Link onClick={<scrollToTop />} to="/royal-lifestyle">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+</div>
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background2})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content">
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        Premium Solution
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Discover smart travel solutions and special travel
-                        products.
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Discover smart travel solutions and special travel
-                        products.
-                      </p>
-                      <button className="button-fill-primary btn-hero">
-                        <Link onClick={<scrollToTop />} to="/sts">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background1})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content">
+<h2 class="text-capitalize d-none d-md-block text-uppercase">Fine Travel</h2>
+<p class="d-block d-md-none text-uppercase">Experience unforgettable holidays at the best rates.</p>
+<p className=" d-none d-md-block">Experience unforgettable holidays at the best rates.</p>
+<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/tour">Explore</Link></button>
 
-          <SwiperSlide>
-            <div
-              className="slider-bg-2"
-              style={{
-                backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background4})`,
-              }}
-            >
-              <div className="container-fluid">
-                <div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
-                  <div className="col-xl-12 col-lg-12  col-md-12 col-6">
-                    <div className="hero4-content">
-                      <h2 class="text-capitalize d-none d-md-block text-uppercase">
-                        Luxurious Stay
-                      </h2>
-                      <p class="d-block d-md-none text-uppercase">
-                        Enjoy a warm ambience, great facilities, and positive
-                        vibes.
-                      </p>
-                      <p className=" d-none d-md-block">
-                        Enjoy a warm ambience, great facilities, and positive
-                        vibes.
-                      </p>
-                      <button className="button-fill-primary  btn-hero">
-                        <Link onClick={<scrollToTop />} to="/niu">
-                          Explore
-                        </Link>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          
-        </Swiper>
-      </div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${backgroundstrip})`} }>
+<div className="container-fluid" style={{animation:"down-enter"}}>
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content"  data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
+<h2 class="text-capitalize d-none d-md-block text-uppercase"> Top-notch Booking</h2>
+<p class="d-block d-md-none text-uppercase">Dig into a process of searching, comparing, and booking hotels.</p>
+<p className=" d-none d-md-block">Dig into a process of searching, comparing, and booking hotels.</p>
+<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/tripstick">Explore</Link></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${backgroundgte})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content">
+<h2 class="text-capitalize d-none d-md-block text-uppercase">First-rate Solution</h2>
+<p class="d-block d-md-none text-uppercase">Access a one-step solution for all your travel needs.</p>
+<p className=" d-none d-md-block">Access a one-step solution for all your travel needs.</p>
+<button className="button-fill-primary btn-hero"><Link onClick={<scrollToTop />} to="/gte">Explore</Link></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background5})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content">
+<h2 class="text-capitalize d-none d-md-block text-uppercase"> VIP Experience </h2>
+<p class="d-block d-md-none text-uppercase">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
+<p className="d-none d-md-block">Unlock a premium holiday experience with exclusive golf packages at special rates.</p>
+<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/royal-lifestyle">Explore</Link></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background2})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content">
+<h2 class="text-capitalize d-none d-md-block text-uppercase">Premium Solution</h2>
+<p class="d-block d-md-none text-uppercase">Discover smart travel solutions and special travel products.</p>
+<p className=" d-none d-md-block">Discover smart travel solutions and special travel products.</p>
+<button className="button-fill-primary btn-hero"><Link onClick={<scrollToTop />} to="/sts">Explore</Link></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+<SwiperSlide>
+<div className="slider-bg-2"  style={{ backgroundImage: `linear-gradient(90deg,rgba(0,0,0,0.45),rgba(0,0,0,0.15)),url(${background4})`}}>
+<div className="container-fluid">
+<div className="row d-flex justify-content-lg-start justify-content-center align-items-center">
+<div className="col-xl-12 col-lg-12  col-md-12 col-6">
+<div className="hero4-content">
+<h2 class="text-capitalize d-none d-md-block text-uppercase">Luxurious Stay</h2>
+<p class="d-block d-md-none text-uppercase">Enjoy a warm ambience, great facilities, and positive vibes.</p>
+<p className=" d-none d-md-block">Enjoy a warm ambience, great facilities, and positive vibes.</p>
+<button className="button-fill-primary  btn-hero"><Link onClick={<scrollToTop />} to="/niu">Explore</Link></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SwiperSlide>
+
+</Swiper>
+  </div>
+
 
       <div className="hero-main-wrapper position-relative d-block d-md-none">
         <Swiper
