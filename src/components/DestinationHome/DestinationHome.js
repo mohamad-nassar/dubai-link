@@ -33,7 +33,7 @@ function DestinationHome() {
           <div className="testimonial-bottom">
           <div className="reviewer-info">
           <h4 className="reviewer-name">{item.title}</h4>
-          <span>{item.created_at}</span>
+          <span>{"reviewed "+new Date(item.created_at).toISOString().split('T')[0]}</span>
           </div>
           <ul className="testimonial-rating">
           <li>
