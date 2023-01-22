@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import BannerDetails from '../components/Banner/BannerDetails'
 import CardDetailslast from '../components/Card/CardDetailslast'
 
@@ -7,6 +7,7 @@ import CardDetailstwo from '../components/Card/CardDetailstwo'
 import CardDetailsvideo from '../components/Card/CardDetailsvideo'
 import {helmet} from 'react-helmet-async'
 function PackageDetails() {
+  
   return (
     <div>
     <helmet>

@@ -1,7 +1,38 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import axios from 'axios';
+import React,{useState,useEffect} from 'react'
+import { Link,useParams } from "react-router-dom";
 import Slider from "react-slick";
+import url from '../url';
 function CardDetailstwo() {
+  const params=useParams();
+  const [pack,setPack]=useState({
+    image:"",
+    logo:"",
+    title:"",
+    description:"",
+    price:"",
+})
+async function getdestmonth()
+{
+    const response=await axios.get(`${url.baseURL}/package/${params.id}`);
+    if(response.data.package)
+    setPack({
+        id:response.data.package.id,
+        image:url.mediaURL+"/"+response.data.package.image,
+        logo:url.mediaURL+"/"+response.data.package.logo,
+        title:response.data.package.title,
+        description:response.data.package.description,
+        price:response.data.package.price,
+        footer:url.mediaURL+"/"+response.data.package.footer,
+    })
+}
+const renderHTML = (rawHTML) =>
+React.createElement("div", {
+  dangerouslySetInnerHTML: { __html: rawHTML },
+});
+useEffect(()=>{
+    getdestmonth();
+},[])
   const settings = {
     infinite: true,
     dots:true,
@@ -41,7 +72,7 @@ function CardDetailstwo() {
     <div>
     <section className="mt-100 mb-80">
     <div className="container ">
-        <h2 className="text-capitalize text-center color-black-light">Find Hotels <span>in</span> Turkey</h2>
+        <h2 className="text-capitalize text-center color-black-light">Find Hotels <span>in</span> {pack.title}</h2>
         <p className="text-center mb-5 hotel-max-width">Looking for a holiday at a bargain? We’re here to help. We team up with the best across the globe to help you stay in comfy hotels.  
         Here are our best offers in one place, to save big and travel more. 
         </p>
@@ -52,7 +83,7 @@ function CardDetailstwo() {
     <div className="blog-card-gamma blog-card-gamma-margin">
         <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="#">
-        <img src="assets/images/dubai/newone/detailsimg1.png" alt="" />
+        <img src="/assets/images/dubai/newone/detailsimg1.png" alt="" />
         </Link>
         <div className="blog-lavel2 d-grid">
         <Link className="text-white-light" to="#">From </Link>
@@ -83,7 +114,7 @@ function CardDetailstwo() {
     <div className="blog-card-gamma blog-card-gamma-margin">
         <div className="blog-thumb blog-thumb-details">
             <Link onClick={<scrollToTop />} to="#">
-            <img src="assets/images/dubai/newone/detailsimg2.png" alt="" />
+            <img src="/assets/images/dubai/newone/detailsimg2.png" alt="" />
             </Link>
             <div className="blog-lavel2 d-grid">
             <Link className="text-white-light" to="#">From </Link>
@@ -112,7 +143,7 @@ function CardDetailstwo() {
             <div className="blog-card-gamma blog-card-gamma-margin">
                 <div className="blog-thumb blog-thumb-details">
                     <Link onClick={<scrollToTop />} to="#">
-                    <img src="assets/images/dubai/newone/detailsimg3.png" alt="" />
+                    <img src="/assets/images/dubai/newone/detailsimg3.png" alt="" />
                     </Link>
                     <div className="blog-lavel2 d-grid">
                     <Link className="text-white-light" to="#">From </Link>
@@ -140,7 +171,7 @@ function CardDetailstwo() {
     <div className="blog-card-gamma blog-card-gamma-margin">
         <div className="blog-thumb blog-thumb-details">
             <Link to="#">
-            <img src="assets/images/dubai/newone/detailsimg2.png" alt="" />
+            <img src="/assets/images/dubai/newone/detailsimg2.png" alt="" />
             </Link>
             <div className="blog-lavel2 d-grid">
             <Link className="text-white-light" to="#">From </Link>

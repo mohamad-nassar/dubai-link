@@ -95,7 +95,7 @@ function App() {
         <Route exact path="/tourism" element={<Tourism /> } />
         <Route exact path="/hospitality" element={<Hospitality /> } />
         <Route exact path="/packages" element={<PackagePending /> } />
-        <Route exact path="/package-details" element={<PackageDetails /> } />
+        <Route exact path="/package/:id" element={<PackageDetails /> } />
         <Route exact path="/media" element={<Media /> } />
         <Route exact path="/istanbul" element={<Istanbul /> } />
         <Route exact path="/map" element={<Mapp /> } />

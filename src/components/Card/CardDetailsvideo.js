@@ -1,13 +1,38 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { Link, useParams } from "react-router-dom";
 import background from '../../assets/banner/video-details.png';
+import url from '../url';
 function CardDetailsvideo() {
+  const params=useParams();
+  const [pack,setPack]=useState({
+    image:"",
+    logo:"",
+    title:"",
+    description:"",
+    price:"",
+})
+async function getdestmonth()
+{
+    const response=await axios.get(`${url.baseURL}/package/${params.id}`);
+    if(response.data.package)
+    setPack({
+        video:response.data.package.video,
+    })
+}
+const renderHTML = (rawHTML) =>
+React.createElement("div", {
+  dangerouslySetInnerHTML: { __html: rawHTML },
+});
+useEffect(()=>{
+    getdestmonth();
+},[])
   return (
     <div>
     <section className="video-image"  style={{ backgroundImage: `url(${background})` }}>
     <div className="video-backg">
     <h2 className="text-capitalize">DISCOVER ISTANBUL</h2>
-    <img src="assets/images/dubai/newone/Play.svg" className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" />
+    <img src="/assets/images/dubai/newone/Play.svg" className="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" />
     </div>
     <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">

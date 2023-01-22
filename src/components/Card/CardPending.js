@@ -5,6 +5,7 @@ import axios from 'axios';
 import url from '../url';
 function CardPending() {
     const [pack,setPack]=useState({
+        id:"",
         image:"",
         logo:"",
         title:"",
@@ -16,13 +17,18 @@ function CardPending() {
         const response=await axios.get(`${url.baseURL}/package`);
         if(response.data.packmonth)
         setPack({
+            id:response.data.packmonth.id,
             image:url.mediaURL+"/"+response.data.packmonth.image,
             logo:url.mediaURL+"/"+response.data.packmonth.logo,
             title:response.data.packmonth.title,
-            description:response.data.packmonth.title,
+            description:response.data.packmonth.description,
             price:response.data.packmonth.price,
         })
     }
+    const renderHTML = (rawHTML) =>
+    React.createElement("div", {
+      dangerouslySetInnerHTML: { __html: rawHTML },
+    });
     useEffect(()=>{
         getdestmonth();
     },[])
@@ -40,7 +46,7 @@ function CardPending() {
 
     <div className="item item-details-one position-relative">
     <div className="card-clip position-relative">
-        <img className="img-fluid" src="assets/images/dubai/newone/aboutturkye.png" alt="image" />
+        <img className="img-fluid" src={pack.image} alt="image" />
     </div>
     <div className="content-clip position-absolute ">
         <div className="row">
@@ -49,18 +55,18 @@ function CardPending() {
   
       <div className="blog-lavel2 d-grid">
             <Link className="text-white-light" to="#">From </Link>
-            <Link className="text-weight-bold" to="">$92</Link>
+            <Link className="text-weight-bold" to="">{pack.price}</Link>
             </div>
             <div className="baner-det-content mt-100">
         <h2 className="text-uppercase justify-content-center">DESTINATION &nbsp;<span class="text-small"> of the </span> &nbsp; Month</h2>
         <img className="small-image" src="assets/images/dubai/newone/Group 16735.svg" />
-        <h2 className="justify-content-center text-capitalize">TÜRKIYE</h2>
-        <p>It is home to unlimited locations that go beyond your wildest imagination. Packed with historical landmarks, distinctive beauty, and unmatched locations, Türkiye is where you go to make memories.</p>
+        <h2 className="justify-content-center text-capitalize">{pack.title}</h2>
+        <p>{renderHTML(pack.description)}</p>
     </div>
     </div>
 </div>
 <button className="button-fill-primary text-center button-details d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
-<Link  className="text-capitalize" to="/package-details">More Details</Link></button>
+<Link  className="text-capitalize" to={"/package/"+pack.id}>More Details</Link></button>
     </div>
     
 

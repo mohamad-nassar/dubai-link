@@ -53,7 +53,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/ephesus-and-virgin-mary's-house">
-        <img src="assets/images/dubai/ephesus.png" alt="" />
+        <img src="/assets/images/dubai/ephesus.png" alt="" />
         </Link>
 
 
@@ -79,7 +79,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/Cappadocia" >
-        <img src="assets/images/dubai/capadoc.png" alt="" />
+        <img src="/assets/images/dubai/capadoc.png" alt="" />
         </Link>
    
 
@@ -103,7 +103,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/prince" >
-        <img src="assets/images/dubai/newone/prince.png" alt="" />
+        <img src="/assets/images/dubai/newone/prince.png" alt="" />
         </Link>
    
 
@@ -128,7 +128,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/tour-sapanaca-masukiye-and-kartepe">
-        <img src="assets/images/dubai/kartep.png" alt="" />
+        <img src="/assets/images/dubai/kartep.png" alt="" />
         </Link>
    
 
@@ -153,7 +153,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/troy-tour">
-        <img src="assets/images/dubai/troy.png" alt="" />
+        <img src="/assets/images/dubai/troy.png" alt="" />
         </Link>
    
 
@@ -183,7 +183,7 @@ function CardDetailslast() {
 <div className="blog-card-gamma blog-card-gamma-margin">
     <div className="blog-thumb blog-thumb-details">
         <Link onClick={<scrollToTop />} to="/hagia-sophia">
-        <img src="assets/images/dubai/istanbul.png" alt="" />
+        <img src="/assets/images/dubai/istanbul.png" alt="" />
         </Link>
    
 
