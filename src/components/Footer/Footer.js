@@ -61,8 +61,8 @@ export default function Footer() {
 
     <div className="fixed-img-banner d-flex">
   
-    <img class="img-chat"  src="assets/images/chatthree.png" />
-    <img class="chaticon" src="assets/images/Chaticoncolored.png" />
+    <img class="img-chat"  src="/assets/images/chatthree.png" />
+    <img class="chaticon" src="/assets/images/Chaticoncolored.png" />
 
 
 </div>
@@ -120,7 +120,7 @@ This website uses cookies to enhance the user experience
                     <div className="col-lg-4 col-12">
                         <div className="footer-about">
                             <div className="footer-logo d-none d-md-block">
-                                <a href="/"><img src="assets/images/dubai/footer-logo.png" alt="logo" /></a>
+                                <a href="/"><img src="/assets/images/dubai/footer-logo.png" alt="logo" /></a>
                             </div>
                   
                  <ul className="social-links d-flex mb-2 mt-5 d-none">
