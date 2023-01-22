@@ -14,6 +14,7 @@ function CardPending() {
     async function getdestmonth()
     {
         const response=await axios.get(`${url.baseURL}/package`);
+        if(response.data.packmonth)
         setPack({
             image:url.mediaURL+"/"+response.data.packmonth.image,
             logo:url.mediaURL+"/"+response.data.packmonth.logo,
