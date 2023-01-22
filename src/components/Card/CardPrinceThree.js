@@ -28,6 +28,7 @@ function CardPrinceThree() {
     <h2 class="text-capitalize text-center headingpackages d-block d-md-none">Ephesus <span>and</span> Virgin Mary's House</h2>
     <div className="blog-wrapper  mt-5 mt-lg-0">
     {renderHTML(desc)}
+    
 
 </div>
 </div>
