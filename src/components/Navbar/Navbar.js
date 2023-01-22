@@ -21,7 +21,7 @@ function Navbar() {
 <div className="row">
 <div className="col-xxl-2 col-xl-2 col-lg-12 col-md-12 col-sm-12 col-xs-12 align-items-center d-xl-flex d-lg-block">
 <div className="nav-logo d-flex justify-content-between align-items-center">
-<Link to="/"><img src="assets/images/dubai/logo.png" alt="logo" /></Link>
+<Link to="/"><img src="/assets/images/dubai/logo.png" alt="logo" /></Link>
 <div className="mobile-menu d-flex ">
 <div className="d-flex align-items-center">
 
@@ -39,7 +39,7 @@ function Navbar() {
     <div className={`nav-items ${isOpen && "open"}`}>
 <nav className={`main-nav ${isOpen && "open"}`}>
 <div className="inner-logo d-xl-none text-center">
-<Link to="#"><img src="assets/images/dubai/logo.png" alt="" /></Link>
+<Link to="#"><img src="/assets/images/dubai/logo.png" alt="" /></Link>
 </div>
 <ul>
     <li onClick={<scrollToTop />}><Link to="/" onClick={() => setIsOpen(!isOpen)}>Home</Link></li>

@@ -96,6 +96,7 @@ function App() {
         <Route exact path="/hospitality" element={<Hospitality /> } />
         <Route exact path="/packages" element={<PackagePending /> } />
         <Route exact path="/package/:id" element={<PackageDetails /> } />
+        <Route exact path="/package/tour/:id" element={<Princethree /> } />
         <Route exact path="/media" element={<Media /> } />
         <Route exact path="/istanbul" element={<Istanbul /> } />
         <Route exact path="/map" element={<Mapp /> } />
