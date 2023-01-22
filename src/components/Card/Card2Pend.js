@@ -12,6 +12,8 @@ function Card2Pend() {
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
   const [pack, setPack] = useState([]);
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
   const [packages, setPackages] = useState("");
 
   function onChange(value) {
@@ -19,6 +21,8 @@ function Card2Pend() {
   }
   async function getpack() {
     const response = await axios.get(`${url.baseURL}/package`);
+    setTitle(response.data.intro.title);
+    setDesc(response.data.intro.description);
     setPack(response.data.packages);
   }
   const renderHTML = (rawHTML) =>
@@ -61,12 +65,10 @@ function Card2Pend() {
       <div className=" pt-1">
         <div className="container">
           <h2 className="mb-2 text-center text-capitalize font-weight-bold mt-5 h2-pending">
-            Reimagine Your Next Experience
+            {title}
           </h2>
           <p className="text-center mb-5 ">
-            The next step of your journey starts here. Browse our special
-            holiday packages, filled with everything you need to know in order
-            to start planning your perfect trip!
+           {renderHTML(desc)}
           </p>
           <div className="row">
             {/* <div className="col-lg-4 col-md-6">
