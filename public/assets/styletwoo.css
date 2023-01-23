@@ -1,0 +1,13 @@
+.update-btn2 a:hover{
+    color:white !important;
+}
+.custom-input-group button[type=submit]{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+.blog-area {
+    display:flex;
+    margin:auto;
+}
