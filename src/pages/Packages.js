@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BannerHotel from '../components/Banner/BannerHotel'
 import CardPackage from '../components/Card/CardPackage'
 import {helmet} from 'react-helmet-async'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
+import url from '../components/url'
 function Packages() {
+  const params=useParams();
+  const [title,setTitle]=useState("");
+  async function gethotel()
+  {
+    const response=await axios.get(`${url.baseURL}/package/hotel/${params.id}`);
+    setTitle(response.data.hotel.title);
+  }
+  useEffect(()=>{
+    gethotel();
+  },[])
   return (
     <div>
     <helmet>

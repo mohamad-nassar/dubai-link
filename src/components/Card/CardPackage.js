@@ -1,27 +1,45 @@
-import React from 'react'
-import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { json, Link, useParams } from "react-router-dom";
+import url from '../url';
 function CardPackage() {
+  const params=useParams();
+  const [back,setBack]=useState("");
+  const [title,setTitle]=useState("");
+  const [desc,setDesc]=useState("");
+  const [prop,setProp]=useState([]);
+  const [room,setRoom]=useState([]);
+  const [web,setweb]=useState([]);
+  const [loc,setLoc]=useState([]);
+  async function gethotel()
+  {
+    const response=await axios.get(`${url.baseURL}/package/hotel/${params.id}`);
+    setBack(url.mediaURL+"/"+response.data.hotel.image);
+    setTitle(response.data.hotel.title);
+    setDesc(response.data.hotel.description);
+    setProp(response.data.hotel.prop);
+    setRoom(response.data.hotel.room);
+    setweb(response.data.hotel.website);
+    setLoc(response.data.hotel.location);
+  }
+  useEffect(()=>{
+    gethotel();
+  },[])
+  const renderHTML = (rawHTML) => React.createElement("div", { dangerouslySetInnerHTML: { __html: rawHTML } });
   return (
     <div>
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
     <li><Link to="/package-details">Destination <span class="text-small">of the</span> month</Link></li>
-    <li>The Elysium Taksim</li>
+    <li>{title}</li>
 </ul>
 </div>
     <div className="container mt-80">
     <div className="blog-wrapper-hotel  pb-5">
-    <h2 className="text-center text-capitalize">The Elysium taksim</h2>
+    <h2 className="text-center text-capitalize">{title}</h2>
     <p className=" paragraphotel text-center mb-1 ">
-    The Elysium Taksim is a paradise where luxury and comfort come together, located in the heart of Taksim, surrounded by shopping,
-entertainment and centers, right in the middle of Istanbul’s historical monuments.</p>
-<p className=" paragraphotel text-center mb-1 ">Located in the heart of Istanbul, the hotel
- provides easy access to the city’s popular cultural sites, gastronomic and shopping venues. Here you can discover the spirit
-   and history of the city. </p>
-   <p className=" paragraphotel text-center mb-1 ">
-   The hotel offers excellent 
-    facilities and convenient services to make every vacation or business stay an unforgettable experience.
+    {renderHTML(desc)}
     </p>
 </div>
 <div className="accommodation-btns d-block d-lg-flex">
@@ -38,7 +56,7 @@ entertainment and centers, right in the middle of Istanbul’s historical monume
 <h3>4.5</h3>
 <span>Excellent</span>
 <div className="progrs-img d-flex mt-4">
-<img className="img-fluid h-20 mt-3" src="assets/images/dubai/progrs-img.png" />
+<img className="img-fluid h-20 mt-3" src="/assets/images/dubai/progrs-img.png" />
 <h3  className="reviewmobile">731 reviews</h3>
 
 </div>
@@ -109,7 +127,18 @@ entertainment and centers, right in the middle of Istanbul’s historical monume
 <h3 className="black-light">Property Amenities</h3>
 <div className="icons-package mt-5">
 <ul>
-<li><img src="assets/images/dubai/parking.png" />
+{
+  prop=="" ? "" :
+  new Map(Object.entries(JSON.parse(prop)).map(item=>{
+    return[
+      <li>{renderHTML(item[1])}</li>
+    ]
+  })
+  )
+
+}
+
+{/* <li><img src="assets/images/dubai/parking.png" />
 <Link className="a-icons">Parking</Link></li>
 <li><img src="assets/images/dubai/wifi.png" />
 <Link className="a-icons">Free internet</Link></li>
@@ -123,7 +152,8 @@ entertainment and centers, right in the middle of Istanbul’s historical monume
 <li><img src="assets/images/dubai/car.png" />
 <Link className="a-icons">Airport transportation</Link></li>
 <li><img src="assets/images/dubai/globe.png" />
-<Link className="a-icons">Business Center with internet Access</Link></li>
+<Link className="a-icons">Business Center with internet Access</Link></li> */}
+
 </ul>
 </div>
 </div>
@@ -131,21 +161,16 @@ entertainment and centers, right in the middle of Istanbul’s historical monume
 <h3 className="black-light">Room Amenities</h3>
 <div className="icons-package mt-5">
 <ul>
-<li><img src="assets/images/dubai/heating.png" />
-<Link className="a-icons">Air conditioning</Link></li>
-<li><img src="assets/images/dubai/cleaner.png" />
-<Link className="a-icons">House Keeping</Link></li>
-<li><img src="assets/images/dubai/food.png" />
-<Link className="a-icons">Room service</Link></li>
+{
+    room=="" ? "" :
+  new Map(Object.entries(JSON.parse(room)).map(item=>{
+    return[
+      <li>{renderHTML(item[1])}</li>
+    ]
+  })
+  )
 
-<li><img src="assets/images/dubai/minibar.png" />
-<Link className="a-icons">Minibar</Link></li>
-<li><img src="assets/images/dubai/parking.png" />
-<Link className="a-icons">Refrigerator</Link></li>
-<li><img src="assets/images/dubai/tv.png" />
-<Link className="a-icons">Flatscreen TV</Link></li>
-<li><img src="assets/images/dubai/bath.png" />
-<Link className="a-icons">Complimentary toiletries</Link></li>
+}
 </ul>
 </div>
 </div>
@@ -160,14 +185,14 @@ entertainment and centers, right in the middle of Istanbul’s historical monume
 
 <section>
 <div className="container mt-5">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d385184.3084384203!2d28.984198999999997!3d41.041609!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x162172a33ea78195!2sThe%20Elysium%20Taksim!5e0!3m2!1sen!2sus!4v1669884702227!5m2!1sen!2sus" height="450" style={{width:"100%"}}></iframe>
+<iframe src={loc} height="450" style={{width:"100%"}}></iframe>
 </div>
 </section>
 
 <div className="accommodation-btns d-block d-lg-flex">
 
     <button className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
-    <a  className="text-capitalize" href="https://theelysiumtaksim.com/">visit website</a></button>
+    <a  className="text-capitalize" href={web}>visit website</a></button>
 </div>
 
     </div>

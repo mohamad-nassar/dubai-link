@@ -106,7 +106,7 @@ function App() {
         <Route exact path="/accomodation" element={<Accomodation /> } />
         <Route exact path="/clients" element={<Clients /> } />
         <Route exact path="/hotel" element={<Hotel /> } />
-        <Route exact path="/elysium-taksim-hotel" element={ <Packages /> } />
+        <Route exact path="/package/hotel/:id" element={ <Packages /> } />
         <Route exact path="/sales-manager-gte-dubai" element={ <Apply /> } />
         <Route exact path="/sales-specialist-gte-dubai" element={ <ApplyTwo /> } />
         <Route exact path="/senior-business-development-executive-dubai" element={ <ApplyThree /> } />

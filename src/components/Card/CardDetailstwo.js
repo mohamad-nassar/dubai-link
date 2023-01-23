@@ -11,6 +11,7 @@ function CardDetailstwo() {
     title:"",
     description:"",
     price:"",
+    hotels:[]
 })
 async function getdestmonth()
 {
@@ -24,6 +25,7 @@ async function getdestmonth()
         description:response.data.package.description,
         price:response.data.package.price,
         footer:url.mediaURL+"/"+response.data.package.footer,
+        hotels:response.data.package.hotels,
     })
 }
 const renderHTML = (rawHTML) =>
@@ -78,122 +80,40 @@ useEffect(()=>{
         </p>
 
     <Slider {...settings}>
-    <div>
-    <div className="item">
-    <div className="blog-card-gamma blog-card-gamma-margin">
-        <div className="blog-thumb blog-thumb-details">
-        <Link onClick={<scrollToTop />} to="#">
-        <img src="/assets/images/dubai/newone/detailsimg1.png" alt="" />
-        </Link>
-        <div className="blog-lavel2 d-grid">
-        <Link className="text-white-light" to="#">From </Link>
-        <Link className="text-weight-bold" to="">$398</Link>
-        </div>
-
-
- 
-
-        </div>
-
-        <div className="media-content">
-        <h2 className="text-uppercase">The Marmara Sisli Hotel</h2>
-        <span>Osmanlı Sokak</span>
-        <p>★★★★</p>
-        <div className="explore-i d-flex flex-column mt-2">
-        <Link onClick={<scrollToTop />} to="/marmara-hotel" className="text-capitalize">More Details</Link>
-        <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-        </div>
-    </div>
-    
-        </div>
-</div>
-    </div>
-
-    <div>
-    <div className="item">
-    <div className="blog-card-gamma blog-card-gamma-margin">
-        <div className="blog-thumb blog-thumb-details">
-            <Link onClick={<scrollToTop />} to="#">
-            <img src="/assets/images/dubai/newone/detailsimg2.png" alt="" />
-            </Link>
-            <div className="blog-lavel2 d-grid">
-            <Link className="text-white-light" to="#">From </Link>
-            <Link className="text-weight-bold" to="">$92</Link>
-            </div>
-
-            </div>
-
-            <div className="media-content">
-            <h2 className="text-uppercase">Elysium Taksim Hotel</h2>
-            <span>İnönü Mah, Harbiye Çayırı</span>
-            <p>★★★★</p>
-            <div className="explore-i d-flex flex-column mt-2">
-            <Link onClick={<scrollToTop />} to="/elysium-taksim-hotel" className="text-capitalize">More Details</Link>
-            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </div>
-        </div>
-
-
-        </div>
-</div>
-    </div>
-
-    <div>
-       <div className="item">
-            <div className="blog-card-gamma blog-card-gamma-margin">
-                <div className="blog-thumb blog-thumb-details">
-                    <Link onClick={<scrollToTop />} to="#">
-                    <img src="/assets/images/dubai/newone/detailsimg3.png" alt="" />
-                    </Link>
-                    <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">From </Link>
-                    <Link className="text-weight-bold" to="">$111</Link>
-                    </div>
+    {pack.hotels.map((item)=>{
+        return[
+          <div>
+          <div className="item">
+          <div className="blog-card-gamma blog-card-gamma-margin">
+              <div className="blog-thumb blog-thumb-details">
+              <Link onClick={<scrollToTop />} to={"/package/hotel/"+item.id} >
+              <img src={url.mediaURL+"/"+item.image} alt="" />
+              </Link>
+              <div className="blog-lavel2 d-grid">
+              <Link className="text-white-light" to={"/package/hotel/"+item.id} >From </Link>
+              <Link className="text-weight-bold" to="">{item.price}</Link>
+              </div>
+      
+      
+       
+      
+              </div>
+      
+              <div className="media-content">
+              <h2 className="text-uppercase">{item.title}</h2>
+              <p>★★★★</p>
+              <div className="explore-i d-flex flex-column mt-2">
+              <Link onClick={<scrollToTop />} to={"/package/hotel/"+item.id} className="text-capitalize">More Details</Link>
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+              </div>
+          </div>
+          
+              </div>
+      </div>
+          </div>
+        ]
+    })}
    
-                    </div>
-            
-
-                    <div className="media-content">
-                    <h2 className="text-uppercase">CVK Park Bosphorus Hotel</h2>
-                    <span>Gümüşsuyu Mah. İnönü</span>
-                    <p>★★★★</p>
-                    <div className="explore-i d-flex flex-column mt-2">
-                    <Link onClick={<scrollToTop />} to="/cvk-hotel" className="text-capitalize">More Details</Link>
-                    <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-
-                </div>
-        </div>
-    </div>
-    <div>
-    <div className="item">
-    <div className="blog-card-gamma blog-card-gamma-margin">
-        <div className="blog-thumb blog-thumb-details">
-            <Link to="#">
-            <img src="/assets/images/dubai/newone/detailsimg2.png" alt="" />
-            </Link>
-            <div className="blog-lavel2 d-grid">
-            <Link className="text-white-light" to="#">From </Link>
-            <Link className="text-weight-bold" to="">$357</Link>
-            </div>
-
-            </div>
-    
-
-            <div className="media-content">
-            <h2 className="text-uppercase">Elysium Taksim Hotel</h2>
-            <span>İnönü Mah, Harbiye Çayırı</span>
-            <p>★★★★</p>
-            <div className="explore-i d-flex flex-column mt-2">
-            <Link onClick={<scrollToTop />} to="/elysium-taksim-hotel" className="text-capitalize">More Details</Link>
-            <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </div>
-        </div>
-
-        </div>
-</div>
-    </div>
 
   </Slider>
     </div>
