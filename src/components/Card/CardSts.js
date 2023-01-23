@@ -74,7 +74,7 @@ function CardSts() {
     <div className="container">
 
      
-          <section className="image-vision-mission">
+          <section className="image-vision-mission mb-120">
             <div className="container-fluid">
 
                 <h2 className="text-center mt-1 mb-2 text-capitalize">Shape <span>a</span> Better World</h2>
@@ -162,71 +162,7 @@ function CardSts() {
 </div>
 </section>
 </div>
-<div className="second-sts mt-100 mb-5 d-none d-lg-block d-xl-block ">
-<div className="container">
-<div className="row d-flex ml-lg-50">
-<div className="col-lg-2 d-flex justify-content-center align-items-center">
-<div className="line-orange position-relative  ">
-    <img  src="assets/images/dubai/Blue strip.png" />
-</div>
 
-<div className="line-content line-content-two position-absolute ">
-    <h3 className="text-capitalize mission text-center text-white">Mission</h3>
-</div>
-</div>
-<div className="col-lg-4 d-flex justify-content-center align-items-center position-relative">
-    <div className="circle-orange d-none d-md-block">
-        <img className="img-fluid" src="assets/images/dubai/Green Cirback.png" />
-    </div>
-    <div className="circle-content position-absolute d-none d-md-block">
-        <p>{renderHTML(banner.mission)}</p>
-    </div>
-    </div>
-    <div className="col-lg-2 d-flex justify-content-center align-items-center">
-        <div className="line-orange line-orange-one position-relative ">
-            <img  src="assets/images/dubai/Orange strip.png" />
-        </div>
-        
- 
-        <div className="line-content line-content-one position-absolute ">
-            <h3 className="text-capitalize vision text-center text-white">Vision</h3>
-        </div>
-        
-        
-        </div>
-        <div className="col-lg-4 d-flex justify-content-center align-items-center position-relative">
-            <div className="circle-orange d-none d-md-block">
-                <img className="img-fluid" src="assets/images/dubai/Orange Cirback.png" />
-            </div>
-
-            <div className="circle-content position-absolute d-none d-md-block">
-                <p>{renderHTML(banner.vision)}</p>
-            </div>
-            </div>
-
-</div>
-</div>
-</div>
-
-
-
-<div class="sts-vision-mobile d-block d-lg-none">
-<div class="container">
-<h2 class="text-capitalize text-center font-weight-bold mt-5">Mission</h2>
-<div class="mission-mobile">
-
-<p>To Further develop and improve government corporate and VIP clients'travel services experience using smart travel solutions</p>
-</div>
-
-<h2 class="text-capitalize text-center font-weight-bold mt-5">Vision</h2>
-<div class="mission-mobile">
-
-<p>Lead by example within the travel industry</p>
-</div>
-
-
-</div>
-</div>
 
 <section className="third-sts  d-none d-md-block">
     <div className="image-sts-big">

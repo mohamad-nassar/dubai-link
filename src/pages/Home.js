@@ -18,24 +18,23 @@ function Home() {
 ,destination dubai" />
     <link rel="canonical" href="/home" />
     </helmet>
-<Hero />
+    <Hero />
 
-<UpcomingTour />
-
-
-<Cardvideo />
-<div class="section-home-image" >
-
-<MoreSection />
-<MoreSectionn />
-
-</div>
-
-<CardHomePackagetwo />
-<DestinationHome />
-
-
+    <UpcomingTour />
+    
+    
+    <Cardvideo />
+    <div class="section-home-image" >
+    
+    <MoreSection />
+    <MoreSectionn />
+    
+    
+    <DestinationHome />
     </div>
+    
+    
+        </div>
   )
 }
 

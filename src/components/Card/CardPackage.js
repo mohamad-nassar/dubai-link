@@ -9,8 +9,9 @@ function CardPackage() {
   const [desc,setDesc]=useState("");
   const [prop,setProp]=useState([]);
   const [room,setRoom]=useState([]);
-  const [web,setweb]=useState([]);
-  const [loc,setLoc]=useState([]);
+  const [web,setweb]=useState("");
+  const [loc,setLoc]=useState("");
+  const [book,setBook]=useState("");
   async function gethotel()
   {
     const response=await axios.get(`${url.baseURL}/package/hotel/${params.id}`);
@@ -21,6 +22,7 @@ function CardPackage() {
     setRoom(response.data.hotel.room);
     setweb(response.data.hotel.website);
     setLoc(response.data.hotel.location);
+    setBook(response.data.hotel.book);
   }
   useEffect(()=>{
     gethotel();
@@ -43,8 +45,8 @@ function CardPackage() {
     </p>
 </div>
 <div className="accommodation-btns d-block d-lg-flex">
-<button className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
-<a  className="text-capitalize" href="https://booking.com/">Book Now</a></button>
+<a  className="text-capitalize " href={book}><button  style={{color:"black"}} className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
+Book Now</button></a>
 </div>
 
 </div>

@@ -1,0 +1,139 @@
+.btn-primary{
+    background-color: #159BDB;
+    }
+    
+    @media screen and (min-width: 576px){
+    .blog-section .post {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    
+    .blog-section .post .featured-post {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin: 0px !important;
+    }
+    .blog-section .post .post-content {
+        padding: 25px;
+    }
+    .blog-section .post .post-content .cat-meta {
+        margin-bottom: 11px;
+        font-weight: 500;
+    }
+    .blog-section .post .post-content .cat-meta a {
+        color: #3A78C9;
+        font-size: 13px;
+    }
+    .blog-section .post .post-content h3 {
+        margin-bottom: 10px;
+    }
+    .blog-section .post .post-content p {
+        margin-bottom: 20px;
+    }
+    
+    }
+    .blog-section .post {
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .blog-quote-box-one {
+        background: #fff;
+        box-shadow: 3px 5px 35px rgb(86 68 169 / 10%);
+        border-radius: 100px 5px 5px 5px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .blog-quote-box-one blockquote {
+        padding: 30px;
+        margin: 0;
+        margin-left: 30px;
+    }
+    .blog-box{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .blog-box .flex-grow-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog-area h2 , .blog-btn , .blog-area img {
+    color:white !important;
+    z-index: 1;
+    position: relative;
+    }
+    .blog-box {
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        z-index: 1;
+        position: relative;
+        background: white;
+        margin: 10px;
+    }
+    .blog-box .flex-grow-1{
+        padding: 10px;
+    }
+    .blog-p{
+        z-index: 1;
+        position: relative;
+    }
+    .update-btn2{
+    width: 250px;
+    }
+    
+    .button-fill-round:hover{
+        box-shadow: inset 200px 0 0 0 #159BDB;
+        border:1px solid #159BDB;
+        color:#fff;
+        transition: all .5s linear;
+    }
+    table tbody tr td , table tbody tr th{
+        vertical-align: middle;
+    }
+    .testimonial-card-alpha .testimonial-card-top img{
+        width: 100px;
+    }
+    .testimonial-body span{
+        font-family: 'inter !important';
+    }
+    .btn-hero , .button-fill-primary{
+border-radius: 0px !important;
+    }
+    .blog-area h2{
+        color:white !important;
+    }
+    .blog-area {
+    display:flex;
+    margin:auto;
+}
+
+.p-dest{
+    background: white;
+}
+
+@media (min-width: 576px){
+.modal-dialog-centered {
+    height: 100% !important;
+}
+.modal-footer{
+    padding: 0px !important;
+}
+.p-dest{
+    background: white;
+    margin-top: 200px;
+}
+}
+
+@media (max-width: 576px){
+
+.section-head-alpha-values p{
+max-width: 100%;
+}
+}
+.values-mobile-title{padding-top:0%}

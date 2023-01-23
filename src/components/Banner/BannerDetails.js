@@ -27,7 +27,7 @@ function BannerDetails() {
     <div className='blury-circle blury-circle-banner'></div>
     </div>
   <div className='log log-banner'>
-  <img src={banner.logo} className="logo-rb" alt="royal"/>
+  <img src={tourBadge} className="logo-rb" alt="royal"/>
 </div>
 </div>
     </div>

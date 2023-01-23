@@ -65,7 +65,7 @@ function Navbar() {
         <ul className="sub-menu sub-travel" style={{display: showHosp ? 'block' : 'none'}}>
 
             <li onClick={<scrollToTop />}><Link to="/niu" onClick={() => setIsOpen(!isOpen)}>NIU Hotel</Link></li>
-            <div className="underline-nav"></div>
+   
         </ul>
     </li>
     <li onClick={<scrollToTop />}><Link className="text-uppercase" to="/sts" onClick={() => setIsOpen(!isOpen)}>STS</Link></li>
