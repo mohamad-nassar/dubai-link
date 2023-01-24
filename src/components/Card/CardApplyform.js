@@ -92,9 +92,7 @@ function onChange(value) {
            </div>
            </div>
         </div>
-        <div className="custom-input-group">
-            <textarea cols="20" rows="7" onChange={(e)=>{setMsg(e.target.value)}} placeholder="Tell Us About Yourself"></textarea>
-            </div>
+
             <div className="form-group">
             <label htmlFor="filePicker" id="filename" style={{ background:"white", color:"#000" , border:"1px solid #000" , margin:"20px" ,  padding:"5px 10px" }}>
      Upload CV
