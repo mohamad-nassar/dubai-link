@@ -1,30 +1,30 @@
 import React,{useState,useEffect} from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
 import axios from "axios";
 import url from "../url.jsx";
 function CardApplyform() {
-
+  const params=useParams();
   const [name,setName]=useState("");
   const [email,setEmail]=useState("");
   const[phone,setPhone]=useState("");
   const[country,setCountry]=useState("");
   const[msg,setMsg]=useState("");
-
+  const [resume,setResume]=useState("");
 async function apply(event)
 {
 event.preventDefault();
 try{
-const req={
-  name:name,
-  email:email,
-  phone:phone,
-  country:country,
-  msg:msg,
-};
-const response=await axios.post(`${url.baseURL}/apply`,req);
+  let form=new FormData();
+  form.append("career_id",params.id);
+  form.append("name",name);
+  form.append("email",email);
+  form.append("phone",phone);
+  form.append("country",country);
+  form.append("resume",document.getElementById("filePicker").files[0]);
+const response=await axios.post(`${url.baseURL}/apply`,form);
 Swal.fire({
   title:'Thank you for applying!',
   text:'We’ll review your application & will be in touch to discuss the next steps.',

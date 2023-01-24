@@ -113,7 +113,7 @@ function CardJoin() {
                           <tr>
                             <th scope="row">{itemindex+1}</th>
                             <td>
-                              <Link onClick={<scrollToTop />} to="/apply">
+                              <Link onClick={<scrollToTop />} to={"/apply/"+item.id}>
                                 {item.title}
                               </Link>
                             </td>
@@ -125,7 +125,7 @@ function CardJoin() {
                                 <button type="button" class="btn btn-dark">
                                   <Link
                                     onClick={<scrollToTop />}
-                                    to="/apply"
+                                    to={"/apply/"+item.id}
                                   >
                                     Apply Now
                                   </Link>
@@ -165,7 +165,7 @@ function CardJoin() {
                           <tr>
                             <th scope="row">{itemindex+1}</th>
                             <td>
-                              <Link onClick={<scrollToTop />} to="/apply">
+                              <Link onClick={<scrollToTop />} to={"/apply/"+item.id}>
                                 {item.title}
                               </Link>
                             </td>
@@ -177,7 +177,7 @@ function CardJoin() {
                                 <button type="button" class="btn btn-dark">
                                   <Link
                                     onClick={<scrollToTop />}
-                                    to="/apply"
+                                    to={"/apply/"+item.id}
                                   >
                                     Apply Now
                                   </Link>

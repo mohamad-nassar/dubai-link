@@ -113,7 +113,7 @@ function App() {
         <Route exact path="/senior-business-development-executive-dubai" element={ <ApplyFour /> } />
         <Route exact path="/sales-manager-gte-cairo" element={ <ApplyFive /> } />
         <Route exact path="/sales-specialist-gte-cairo" element={ <ApplySix /> } />
-        <Route exact path="/apply" element={ <ApplyForm /> } />
+        <Route exact path="/apply/:id" element={ <ApplyForm /> } />
         <Route exact path="/room" element={ <Room /> } />
         <Route exact path="/privacy" element={ <Privacy /> } />
         <Route exact path="/terms" element={ <Terms /> } />
