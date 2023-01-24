@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 function CardJoin() {
   return (
+    
     <div>
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
@@ -57,6 +58,7 @@ function CardJoin() {
   </thead>
 
   <tbody>
+    
     <tr>
       <th scope="row">1</th>
       <td><Link onClick={<scrollToTop />} to="/applytwo">Sales Specialist</Link></td>

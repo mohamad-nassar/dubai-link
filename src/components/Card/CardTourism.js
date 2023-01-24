@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
 import tripBadge from '../../assets/banner/Tripstiklogo.png';
 import gteBadge from '../../assets/banner/GTELogo.png';
 import tourBadge from '../../assets/banner/dubailogotour.png';
+import axios from 'axios';
+import url from '../url';
 function CardTourism() {
+    const [title,setTitle]=useState("");
+    const [desc,setDesc]=useState("");
+    async function getdata()
+    {
+      const response=await axios.get(`${url.baseURL}/travel`);
+      setTitle(response.data.travel.title);
+      setDesc(response.data.travel.description);
+    }
+    useEffect(()=>{
+        getdata();
+    },[])
+    const renderHTML = (rawHTML) =>
+    React.createElement("div", {
+      dangerouslySetInnerHTML: { __html: rawHTML },
+    });
   return (
     <div>
     <div className="container">
@@ -18,8 +35,8 @@ function CardTourism() {
     <div className="blog-wrapper pb-5">
     <h2 class="text-capitalize text-center headingpackages d-block d-md-none">Travel & Tourism</h2>
     <div className="container">
-        <h2 className="text-center text-capitalize text-mobile">Unforgettable holidays <span>at the</span> best rates</h2>
-        <p className="text-center textp pb-100 mb-5 ">At Dubai Link Group , we pride ourselves in bringing two main players into the fast-tracking B2B travel booking industry, Dubai Link Travel & Tours and Global Travel Engine (GTE). Plan, book and enjoy unforgettable holidays with the most flexibility at the best rates with Tripstick, the cutting-edge B2C platform now at our customers' disposal.</p>
+        <h2 className="text-center text-capitalize text-mobile">{title}</h2>
+        <p className="text-center textp pb-100 mb-5 ">{renderHTML(desc)}</p>
         </div>
         </div>
         <div className="full-width">
