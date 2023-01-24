@@ -113,13 +113,13 @@ function CardQuote() {
                <div className="col-lg-6 ">
                <div className="d-flex-check-label d-md-flex ">
 
-               <div className="custom-input-group ">
+               <div className="custom-input-group mb-5 ">
                <input type="text" class="d-none d-md-block" placeholder="Tour Requested Date:" id="Phone"/>
                <input type="text" onChange={(e)=>{setTourdate(e.target.value)}} class="d-block d-md-none " placeholder="Tour Requested Date:(e.g:mm/dd/year)" id="Phone"/>
                </div>
           
         
-               <div className="custom-input-group d-none d-md-block ml-1">
+               <div className="custom-input-group d-none d-md-block ml-1 ">
                <input onChange={(e)=>{setTourdate(e.target.value)}} type="date" class="date"  />
          
                </div>

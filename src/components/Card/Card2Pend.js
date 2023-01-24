@@ -191,15 +191,15 @@ function Card2Pend() {
                          aria-label="Close"
                        ></button>
  
-                       <h2 class="m-auto text-center mt-5 mb-2 font-weight-bold" style={{"textTransform":"capitalize"}}>
+                       <h2 class="m-auto text-center mt-5 mb-4 font-weight-bold" style={{"textTransform":"capitalize"}}>
                          Thank you for choosing this package.
                        </h2>
-                       <h5 class="text-center" style={{"textTransform":"capitalize"}}>
+                       <p class="text-center" style={{"textTransform":"capitalize"}}>
                          {" "}
                          we appreciate your trust in us. Kindly fill out the form
                          provided with your details for a smooth and seamless
                          experience.
-                       </h5>
+                       </p>
                        <div className="row">
                          <div className="col-lg-6">
                            <div className="custom-input-group">
@@ -290,129 +290,7 @@ function Card2Pend() {
              </div>
               ]
             })}
-            {/* <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img src="assets/images/dubai/newone/details5.png" alt="" />
-                  </Link>
-
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $1450
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      SPAIN & PORTUGAL / 8 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img src="assets/images/dubai/newone/details2.png" alt="" />
-                  </Link>
-
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $1660
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      SPAIN / 8 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img
-                      src="assets/images/dubai/newone/detasils3.png"
-                      alt=""
-                    />
-                  </Link>
-
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $470
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      BOSNIA & HERZEGOVINA / 8 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img src="assets/images/dubai/newone/details4.png" alt="" />
-                  </Link>
-
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $251
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      AZERBAIJAN / 5 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
+        
           </div>
         </div>
       </div>
