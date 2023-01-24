@@ -1,6 +1,7 @@
 import React from 'react'
-import background from '../../assets/banner/contactus.png';
+// import background from '../../assets/banner/contactus.png';
 function BannerContact() {
+  const background="";
   return (
     <div>
     <div class="breadcrumb breadcrumb-style-one " style={{ backgroundImage: `url(${background})` }}>
