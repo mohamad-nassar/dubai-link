@@ -267,12 +267,12 @@ function Card2Pend() {
  
 
                        <ReCAPTCHA
-                       sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+                       sitekey="6LdBWyEkAAAAABGzhkK_QOYUEIeTQRjPlW3Qhm8j"
                        onChange={onChange}
                      />
 
 
-                       <div className="custom-input-group submit-packages mt-5">
+                       <div className="custom-input-group submit-packages mt-4">
                          <div className="submite-btn">
                            <button
                              type="submit"

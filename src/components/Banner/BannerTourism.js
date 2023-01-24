@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import background from '../../assets/banner/tourismback.png';
+import background from '../../assets/banner/tourismback.jpg';
 import url from '../url';
 function BannerTourism() {
   const [image,setImage]=useState("");

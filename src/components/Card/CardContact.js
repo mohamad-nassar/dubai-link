@@ -116,10 +116,10 @@ function CardContact() {
                 <textarea cols="20" onChange={(e)=>{setMsg(e.target.value)}}  rows="7" placeholder=" Your Message"></textarea>
                 </div>
                 <ReCAPTCHA
-                sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+                sitekey="6LdBWyEkAAAAABGzhkK_QOYUEIeTQRjPlW3Qhm8j"
                 onChange={onChange}
               />
-                <div className="custom-input-group mt-5">
+                <div className="custom-input-group mt-4">
                 <div className="submite-btn">
                 <button type="submit" className="button-fill-primary btn-contact update-btn2 slide mt-5 mb-5">
                 Submit</button>

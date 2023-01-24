@@ -128,10 +128,10 @@ function CardQuote() {
 
             </div>
             <ReCAPTCHA
-            sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+            sitekey="6LdBWyEkAAAAABGzhkK_QOYUEIeTQRjPlW3Qhm8j"
             onChange={onChange}
           />
-                <div className="custom-input-group mt-5">
+                <div className="custom-input-group mt-4">
                 <div className="submite-btn">
                 <button className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
                 <Link  className="text-capitalize">Send</Link></button>
