@@ -6,10 +6,10 @@ import background1 from "../../assets/banner/dubaiback.png";
 import background from "../../assets/banner/stripslider.png";
 
 import background2 from "../../assets/banner/Home15.png";
-import backgroundgte from "../../assets/banner/Home12.png";
+import backgroundgte from "../../assets/banner/Home12.jpg";
 import backgroundstrip from "../../assets/banner/stripbannslider.png";
 import background3 from "../../assets/banner/stripslider.png";
-import background4 from "../../assets/banner/Home11.png";
+import background4 from "../../assets/banner/Home11.jpg";
 import background5 from "../../assets/banner/royalslider.png";
 import { CiPlay1 } from "react-icons/ci";
 // Import Swiper styles

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import axios from "axios";
 import url from "../url";
-import backgroundmobile from "../../assets/banner/banner10.png";
+import backgroundmobile from "../../assets/banner/banner10.jpg";
 function MoreSectionn() {
   const [banner, setBanner] = useState([]);
   async function getbanners() {

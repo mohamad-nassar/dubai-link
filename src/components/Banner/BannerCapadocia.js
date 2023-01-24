@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../assets/banner/capadocia.jpg';
+import background from '../../assets/banner/capadocia.png';
 function BannerCapadocia() {
   return (
     <div>

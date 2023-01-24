@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import background from '../../assets/banner/ephesusbanner.jpg';
+import background from '../../assets/banner/ephesusbanner.png';
 import url from '../url';
 function Bannerephesus() {
   const paramas = useParams();

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from "react-router-dom";
-import background from '../../assets/banner/video-details.png';
+import background from '../../assets/banner/video-details.jpg';
 import url from '../url';
 function CardDetailsvideo() {
   const params=useParams();

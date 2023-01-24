@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
@@ -43,6 +44,10 @@ function CardQuote() {
   }
 
 
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
 
   return (
@@ -105,15 +110,16 @@ function CardQuote() {
                </div>
 
 
-               <div className="col-lg-6">
-               <div className="d-flex-check-label d-flex ">
+               <div className="col-lg-6 ">
+               <div className="d-flex-check-label d-md-flex ">
 
-               <div className="custom-input-group tour-date-input">
-               <input type="text" placeholder="Tour Requested Date:" id="Phone" disabled="disabled"/>
+               <div className="custom-input-group ">
+               <input type="text" class="d-none d-md-block" placeholder="Tour Requested Date:" id="Phone"/>
+               <input type="text" onChange={(e)=>{setTourdate(e.target.value)}} class="d-block d-md-none " placeholder="Tour Requested Date:(e.g:mm/dd/year)" id="Phone"/>
                </div>
           
         
-               <div className="custom-input-group tour-date-icon ml-1">
+               <div className="custom-input-group d-none d-md-block ml-1">
                <input onChange={(e)=>{setTourdate(e.target.value)}} type="date" class="date"  />
          
                </div>
@@ -121,9 +127,11 @@ function CardQuote() {
                </div>
 
             </div>
-       
-                <div className="custom-inp
-                ut-group">
+            <ReCAPTCHA
+            sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+            onChange={onChange}
+          />
+                <div className="custom-input-group mt-5">
                 <div className="submite-btn">
                 <button className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-5 mb-5">
                 <Link  className="text-capitalize">Send</Link></button>

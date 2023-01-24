@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React,{useState,useEffect} from 'react'
-import background from '../../assets/banner/tourbanner.png' ;
+import background from '../../assets/banner/tourbanner.jpg' ;
 import tourBadge from '../../assets/banner/tourlogo.png';
 import url from '../url';
 

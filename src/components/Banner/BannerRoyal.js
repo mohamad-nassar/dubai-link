@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import background from '../../assets/banner/royalbanner.png' ;
+import background from '../../assets/banner/royalbanner.jpg' ;
 import tourBadge from '../../assets/banner/Roylalifestyllogo.svg';
 import axios from "axios";
 import url from '../url';

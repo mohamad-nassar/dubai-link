@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../assets/banner/cantinaback.png';
+import background from '../../assets/banner/cantinaback.jpg';
 import lacantinaBadge from '../../assets/banner/Lacantinalogo.png';
 function BannerLacan() {
   return (

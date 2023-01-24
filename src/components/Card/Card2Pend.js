@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import axios from "axios";
@@ -60,6 +60,14 @@ function Card2Pend() {
     getpack();
   });
 
+
+  
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
+
+
+
   return (
     <div>
       <div className=" pt-1">
@@ -67,7 +75,7 @@ function Card2Pend() {
           <h2 className="mb-2 text-center text-capitalize font-weight-bold mt-5 h2-pending">
             {title}
           </h2>
-          <p className="text-center mb-5 ">
+          <p className="text-center mb-5">
            {renderHTML(desc)}
           </p>
           <div className="row">
@@ -257,7 +265,14 @@ function Card2Pend() {
                          ></textarea>
                        </div>
  
-                       <div className="custom-input-group submit-packages">
+
+                       <ReCAPTCHA
+                       sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+                       onChange={onChange}
+                     />
+
+
+                       <div className="custom-input-group submit-packages mt-5">
                          <div className="submite-btn">
                            <button
                              type="submit"

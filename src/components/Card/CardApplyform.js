@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import ReCAPTCHA from "react-google-recaptcha";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
@@ -39,6 +40,11 @@ Swal.fire({
   confirmButtonText:'okay'
 })
 }
+}
+
+
+function onChange(value) {
+  console.log("Captcha value:", value);
 }
 
 
@@ -96,7 +102,11 @@ Swal.fire({
             <input onChange={()=>{document.getElementById("filename").innerHTML=document.getElementById("filePicker").files[0].name}} id="filePicker" style={{visibility:"hidden"}} type={"file"} />
      
             </div>
-            <div className="custom-input-group">
+            <ReCAPTCHA
+            sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+            onChange={onChange}
+          />
+            <div className="custom-input-group mt-5">
             <div className="submite-btn">
             <button className="button-fill-primary text-center d-flex justify-content-center m-auto update-btn2 slide mt-2 mb-5">
             <a className="text-capitalize">Submit</a></button>

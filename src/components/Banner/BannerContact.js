@@ -1,5 +1,5 @@
 import React from 'react'
-import background from '../../assets/banner/Contactus.png';
+import background from '../../assets/banner/contactus.png';
 function BannerContact() {
   return (
     <div>

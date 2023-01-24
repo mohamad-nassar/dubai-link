@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import { Link } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "react-toastify";
 import Swal from 'sweetalert2';
 import axios from "axios";
@@ -42,7 +43,9 @@ function CardContact() {
       }
   }
 
-
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   return (
     <div>
@@ -109,11 +112,14 @@ function CardContact() {
                </div>
                </div>
             </div>
-            <div className="custom-input-group">
+            <div className="custom-input-group mb-5">
                 <textarea cols="20" onChange={(e)=>{setMsg(e.target.value)}}  rows="7" placeholder=" Your Message"></textarea>
                 </div>
-           
-                <div className="custom-input-group">
+                <ReCAPTCHA
+                sitekey="6LfI_B0kAAAAAIHipEa01yuClzSIgSxCdDs9ZXB0"
+                onChange={onChange}
+              />
+                <div className="custom-input-group mt-5">
                 <div className="submite-btn">
                 <button type="submit" className="button-fill-primary btn-contact update-btn2 slide mt-5 mb-5">
                 Submit</button>

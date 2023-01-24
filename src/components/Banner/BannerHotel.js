@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
-import background from '../../assets/banner/hotel.png';
+import background from '../../assets/banner/hotel.jpg';
 import hotelBadge from '../../assets/banner/hotellogoo.png';
 import url from '../url';
 function BannerRoyal() {

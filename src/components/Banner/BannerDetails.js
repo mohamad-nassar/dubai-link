@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React,{useState,useEffect} from 'react'
 import { useParams } from 'react-router-dom';
-import background from '../../assets/banner/aboutturkye.png';
+import background from '../../assets/banner/aboutturkye.jpg';
 import tourBadge from '../../assets/banner/tourlogo.png';
 import url from '../url';
 function BannerDetails() {
