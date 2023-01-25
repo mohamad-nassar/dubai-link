@@ -40,7 +40,6 @@ function CardPackage() {
     <li><Link to="/">Home</Link></li>
 
     <li><Link to={"/package/"+id}>Destination <span class="text-small">of the</span> month</Link></li>
-=======
     <li><Link to="/package/9">Destination <span class="text-small">of the</span> month</Link></li>
     <li>{title}</li>
 </ul>
