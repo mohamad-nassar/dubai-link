@@ -4,11 +4,18 @@ import { Link, useParams } from "react-router-dom";
 import url from '../url';
 function CardPrinceThree() {
     const paramas = useParams();
+    const [id, setId] = useState("");
+    const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
     async function gettour() {
       const response = await axios.get(
         `${url.baseURL}/package/tour/${paramas.id}`
       );
+      const res = await axios.get(
+        `${url.baseURL}/package`
+      );
+      setId(res.data.packmonth.id);
+      setTitle(response.data.tour.title);
       setDesc(response.data.tour.description);
     }
     useEffect(() => {
@@ -20,12 +27,12 @@ function CardPrinceThree() {
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
-    <li><Link  onClick={<scrollToTop />} to="/package-details">Destination  <span class="text-small">of the</span>  Month</Link></li>
-    <li>Ephesus <span>and</span> Virgin Mary's House</li>
+    <li><Link  onClick={<scrollToTop />} to={"/package/"+id}>Destination  <span class="text-small">of the</span>  Month</Link></li>
+    <li>{title}</li>
 </ul>
 </div>
     <div className="container h2-p accommodation-banner-h2-p mt-80">
-    <h2 class="text-capitalize text-center headingpackages d-block d-md-none">Ephesus <span>and</span> Virgin Mary's House</h2>
+    <h2 class="text-capitalize text-center headingpackages d-block d-md-none">{title}</h2>
     <div className="blog-wrapper  mt-5 mt-lg-0">
     {renderHTML(desc)}
     

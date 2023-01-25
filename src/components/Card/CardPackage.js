@@ -4,6 +4,7 @@ import { json, Link, useParams } from "react-router-dom";
 import url from '../url';
 function CardPackage() {
   const params=useParams();
+  const [id,setId]=useState("");
   const [back,setBack]=useState("");
   const [title,setTitle]=useState("");
   const [desc,setDesc]=useState("");
@@ -14,6 +15,10 @@ function CardPackage() {
   const [book,setBook]=useState("");
   async function gethotel()
   {
+    const res = await axios.get(
+      `${url.baseURL}/package`
+    );
+    setId(res.data.packmonth.id);
     const response=await axios.get(`${url.baseURL}/package/hotel/${params.id}`);
     setBack(url.mediaURL+"/"+response.data.hotel.image);
     setTitle(response.data.hotel.title);
@@ -33,7 +38,7 @@ function CardPackage() {
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/package-details">Destination <span class="text-small">of the</span> month</Link></li>
+    <li><Link to={"/package/"+id}>Destination <span class="text-small">of the</span> month</Link></li>
     <li>{title}</li>
 </ul>
 </div>

@@ -24,7 +24,7 @@ function Packages() {
     dubai to prague flight,dubai to vienna,dubai vienna flights,dubai to armenia,dubai to armenia flight,
     spain visa dubai,dubai to spain,dubai to spain flight,dubai to portugal,dubai to portugal flight ticket price,
     dubai to bosnia,bosnia dubai,fly dubai to bosnia" />
-    <link rel="canonical" href="/elysium-taksim-hotel" />
+    <link rel="canonical" href={"/package/hotel/"+params.id} />
     </helmet>
       <BannerHotel />
 <CardPackage />

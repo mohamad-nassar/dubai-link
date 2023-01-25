@@ -29,7 +29,7 @@ function Prince3() {
     spain visa dubai,dubai to spain,dubai to spain flight,dubai to portugal,dubai to portugal flight ticket price,
     dubai to bosnia, fly dubai to bosnia "
         />
-        <link rel="canonical" href="/ephesus-and-virgin-mary's-house" />
+        <link rel="canonical" href={"/package/tour/"+paramas.id} />
       </helmet>
       <Bannerephesus />
       <CardPrinceThree />
