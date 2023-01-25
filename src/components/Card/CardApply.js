@@ -16,8 +16,6 @@ function CardApply() {
   }
   useEffect(()=>{
     getinfo().then(()=>{
-      console.log(desc);
-      $('#desc').html(desc);
     });
   },[desc]);
   const renderHTML = (rawHTML) => React.createElement("div", { dangerouslySetInnerHTML: { __html: rawHTML } });
