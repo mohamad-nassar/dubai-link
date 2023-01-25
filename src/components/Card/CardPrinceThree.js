@@ -29,6 +29,8 @@ function CardPrinceThree() {
     <li><Link to="/">Home</Link></li>
     <li><Link  onClick={<scrollToTop />} to={"/package/"+id}>Destination  <span class="text-small">of the</span>  Month</Link></li>
     <li>{title}</li>
+    <li><Link  onClick={<scrollToTop />} to="/package/9">Destination  <span class="text-small">of the</span>  Month</Link></li>
+    <li>Ephesus <span>and</span> Virgin Mary's House</li>
 </ul>
 </div>
     <div className="container h2-p accommodation-banner-h2-p mt-80">

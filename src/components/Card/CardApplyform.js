@@ -68,13 +68,13 @@ function onChange(value) {
         <div className="col-lg-6">
          <div className="custom-input-group">
 
-        <input type="text"  onChange={(e)=>{setName(e.target.value)}} placeholder="Your name" id="Name" />
+        <input type="text"  onChange={(e)=>{setName(e.target.value)}} placeholder="Name" id="Name" />
         </div>
         </div>
         <div className="col-lg-6">
         <div className="custom-input-group">
   
-        <input type="text" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Your Email" id="Lst Name" />
+        <input type="text" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" id="Lst Name" />
         </div>
         </div>
       
@@ -82,13 +82,13 @@ function onChange(value) {
            <div className="col-lg-6">
             <div className="custom-input-group">
    
-           <input type="text" onChange={(e)=>{setPhone(e.target.value)}} placeholder="Your Phone Number" id="Phone" />
+           <input type="text" onChange={(e)=>{setPhone(e.target.value)}} placeholder=" Phone Number" id="Phone" />
            </div>
            </div>
            <div className="col-lg-6">
             <div className="custom-input-group">
    
-           <input type="text" onChange={(e)=>{setCountry(e.target.value)}} placeholder="Your country" id="Positions" />
+           <input type="text" onChange={(e)=>{setCountry(e.target.value)}} placeholder="Country" id="Positions" />
            </div>
            </div>
         </div>

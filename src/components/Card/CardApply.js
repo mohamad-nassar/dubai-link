@@ -34,8 +34,8 @@ function CardApply() {
     <h2 class="text-capitalize text-center headingpackages d-block d-md-none">Apply</h2>
     <div className="container">
 
-        <div id='desc'>
-          {renderHTML(desc)}
+        <div id='desc' style={{"text-transform":"text-capitalize !important"}}>
+      {renderHTML(desc)}
         </div>
 
         <div class="d-flex justify-content-end mt-5">
