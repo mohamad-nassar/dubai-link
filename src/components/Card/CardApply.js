@@ -36,7 +36,7 @@ function CardApply() {
     <h2 class="text-capitalize text-center headingpackages d-block d-md-none">Apply</h2>
     <div className="container">
 
-        <div class="apply-text text-align-left mt-5" id='desc'>
+        <div id='desc'>
           {renderHTML(desc)}
         </div>
 
