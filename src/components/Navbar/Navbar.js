@@ -44,7 +44,7 @@ function Navbar() {
 <ul>
     <li onClick={<scrollToTop />}><Link to="/" onClick={() => setIsOpen(!isOpen)}>Home</Link></li>
     <li onClick={<scrollToTop />}>
-        <Link to="/about" onClick={() => setIsOpen(!isOpen)}>About</Link>
+        <Link to="/about" onClick={() => setIsOpen(!isOpen)}>About Us</Link>
     </li>
     <li className="has-child-menu">
         <Link  onClick={() =>{if(showNav) setShowNav(false); else setShowNav(true);}}>Travel & Tourism</Link>
@@ -72,7 +72,7 @@ function Navbar() {
     <li onClick={<scrollToTop />}><Link to="/destination" onClick={() => setIsOpen(!isOpen)}>Destination Representation</Link></li>
     <li onClick={<scrollToTop />}><Link to="/royal-lifestyle" onClick={() => setIsOpen(!isOpen)}>Royal Lifestyle</Link></li>
     <li onClick={<scrollToTop />}><Link to="/packages" onClick={() => setIsOpen(!isOpen)}>Packages</Link></li>
-    <li onClick={<scrollToTop />}><Link to="/contact" onClick={() => setIsOpen(!isOpen)}>Contact</Link></li>
+    <li onClick={<scrollToTop />}><Link to="/contact" onClick={() => setIsOpen(!isOpen)}>Contact Us</Link></li>
     <li onClick={<scrollToTop />} className="d-block d-xl-none"><Link to="/map" onClick={() => setIsOpen(!isOpen)}>Map</Link></li>
 </ul>
 <div className="inner-contact-options d-xl-none">

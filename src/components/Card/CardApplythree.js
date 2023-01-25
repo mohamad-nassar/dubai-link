@@ -30,8 +30,8 @@ function CardApplythree() {
 <li><p>Degree in marketing, administration, or similar.</p></li>
 <li><p>Certified Travel Associate (CTA) or Certified Travel Counselor (CTC).</p></li>
 <li><p>5 years minimum experience in Airline Ticketing, Holiday Packaging & Sales.</p></li>
-<li><p>Proficient in GDS systems.</p></li>
-<li><p>Excellent written and verbal communication skills.</p></li>
+<li><p>Develop relationships with key accounts.</p></li>
+<li><p>Processing all agents' sign-ups accordingly.</p></li>
 <li><p>Strong customer service & sales skills for generating leads.</p></li>
 <li><p>Extensive knowledge of productivity tools & software.</p></li>
 <li><p>Multi-tasking and time-management skills, with the ability to prioritize tasks.</p></li>

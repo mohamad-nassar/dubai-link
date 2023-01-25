@@ -77,43 +77,43 @@ function CardContact() {
             <div className="col-lg-6">
              <div className="custom-input-group">
     
-            <input type="text" onChange={(e)=>{setFname(e.target.value)}} placeholder="Your First Name" id="Name" />
+            <input type="text" onChange={(e)=>{setFname(e.target.value)}} placeholder=" First Name" id="Name" />
             </div>
             </div>
             <div className="col-lg-6">
             <div className="custom-input-group">
       
-            <input type="text" onChange={(e)=>{setLname(e.target.value)}}  placeholder="Your Last Name" id="Last Name" />
+            <input type="text" onChange={(e)=>{setLname(e.target.value)}}  placeholder="Last Name" id="Last Name" />
             </div>
             </div>
           
             <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setEmail(e.target.value)}}  placeholder="Your Email" id="email" />
+               <input type="text" onChange={(e)=>{setEmail(e.target.value)}}  placeholder=" Email Address" id="email" />
                </div>
                </div>
                <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setPhone(e.target.value)}}  placeholder="Your Phone Number" id="Email" />
+               <input type="text" onChange={(e)=>{setPhone(e.target.value)}}  placeholder=" Phone Number" id="Email" />
                </div>
                </div>
                <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setCompany(e.target.value)}}  placeholder="Your Company" id="Phone" />
+               <input type="text" onChange={(e)=>{setCompany(e.target.value)}}  placeholder=" Company Name" id="Phone" />
                </div>
                </div>
                <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setAffiliation(e.target.value)}}  placeholder="Your Affiliation" id="Subject" />
+               <input type="text" onChange={(e)=>{setAffiliation(e.target.value)}}  placeholder="Affiliation" id="Subject" />
                </div>
                </div>
             </div>
             <div className="custom-input-group mb-5">
-                <textarea cols="20" onChange={(e)=>{setMsg(e.target.value)}}  rows="7" placeholder=" Your Message"></textarea>
+                <textarea cols="20" onChange={(e)=>{setMsg(e.target.value)}}  rows="7" placeholder=" Message"></textarea>
                 </div>
                 <ReCAPTCHA
                 sitekey="6LdBWyEkAAAAABGzhkK_QOYUEIeTQRjPlW3Qhm8j"

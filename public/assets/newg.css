@@ -124,10 +124,7 @@ border-radius: 0px !important;
 .modal-footer{
     padding: 0px !important;
 }
-.p-dest{
-    background: white;
-    margin-top: 200px;
-}
+
 }
 
 @media (max-width: 576px){

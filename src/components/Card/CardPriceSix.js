@@ -9,7 +9,7 @@ function CardPrinceSix() {
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
-    <li><Link  onClick={<scrollToTop />} to="/package-details">Destination  <span class="text-small">of the</span> Month</Link></li>
+    <li><Link  onClick={<scrollToTop />} to="/package/9">Destination  <span class="text-small">of the</span> Month</Link></li>
     <li>Cappadocia</li>
 </ul>
 </div>

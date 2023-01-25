@@ -234,7 +234,7 @@ function Card2Pend() {
                                onChange={(e) => {
                                  setEmail(e.target.value);
                                }}
-                               placeholder="Your Email"
+                               placeholder="Email Address"
                                id="email"
                              />
                            </div>
@@ -247,7 +247,7 @@ function Card2Pend() {
                                onChange={(e) => {
                                  setPhone(e.target.value);
                                }}
-                               placeholder="Your Phone"
+                               placeholder="Phone Number"
                                id="phone"
                              />
                            </div>
@@ -261,7 +261,7 @@ function Card2Pend() {
                              setMsg(e.target.value);
                            }}
                            rows="7"
-                           placeholder=" Your Message"
+                           placeholder="Message"
                          ></textarea>
                        </div>
  

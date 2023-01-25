@@ -33,7 +33,7 @@ function CardPackage() {
     <div className="container">
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
-    <li><Link to="/package-details">Destination <span class="text-small">of the</span> month</Link></li>
+    <li><Link to="/package/9">Destination <span class="text-small">of the</span> month</Link></li>
     <li>{title}</li>
 </ul>
 </div>

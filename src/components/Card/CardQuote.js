@@ -74,26 +74,26 @@ function CardQuote() {
             <div className="col-lg-6">
              <div className="custom-input-group">
     
-            <input type="text" onChange={(e)=>{setFname(e.target.value)}} placeholder="Your First name" id="Name" />
+            <input type="text" onChange={(e)=>{setFname(e.target.value)}} placeholder="First name" id="Name" />
             </div>
             </div>
             <div className="col-lg-6">
             <div className="custom-input-group">
       
-            <input type="text" onChange={(e)=>{setLname(e.target.value)}} placeholder="Your Last Name" id="Last Name" />
+            <input type="text" onChange={(e)=>{setLname(e.target.value)}} placeholder=" Last Name" id="Last Name" />
             </div>
             </div>
           
             <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Your Email" id="email" />
+               <input type="text" onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email Address" id="email" />
                </div>
                </div>
                <div className="col-lg-6">
                 <div className="custom-input-group">
        
-               <input type="text" onChange={(e)=>{setPhone(e.target.value)}} placeholder="Your Phone Number" id="Email" />
+               <input type="text" onChange={(e)=>{setPhone(e.target.value)}} placeholder="Phone Number" id="Email" />
                </div>
                </div>
                <div className="col-lg-6">
