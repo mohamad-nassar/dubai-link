@@ -118,9 +118,7 @@ border-radius: 0px !important;
 }
 
 @media (min-width: 576px){
-.modal-dialog-centered {
-    height: 100% !important;
-}
+
 .modal-footer{
     padding: 0px !important;
 }

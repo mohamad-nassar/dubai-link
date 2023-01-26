@@ -50,9 +50,9 @@ function Navbar() {
         <Link  onClick={() =>{if(showNav) setShowNav(false); else setShowNav(true);}}>Travel & Tourism</Link>
         <i onClick={() =>{if(showNav) setShowNav(false); else setShowNav(true);}} className="fl flaticon-plus">{ showNav ? '-':'+' }</i>
         <ul className="sub-menu sub-travel" style={{display: showNav ? 'block' : 'none'}} id="ultravel">
-            <h2><Link to="/tourism" onClick={() => setIsOpen(!isOpen)}>Travel & Tourism</Link></h2>
+            <h2><Link to="/travel-and-tourism" onClick={() => setIsOpen(!isOpen)}>Travel & Tourism</Link></h2>
             <div className="underline-nav"></div>
-            <li onClick={<scrollToTop />}><Link to="/tour" onClick={() => setIsOpen(!isOpen)}>Dubai Link Travel & Tours</Link></li>
+            <li onClick={<scrollToTop />}><Link to="/dubai-link-travel-and-tours" onClick={() => setIsOpen(!isOpen)}>Dubai Link Travel & Tours</Link></li>
             <div className="underline-nav"></div>
             <li onClick={<scrollToTop />}><Link className="text-uppercase" to="/gte" onClick={() => setIsOpen(!isOpen)}>GTE</Link></li>
             <div className="underline-nav"></div>

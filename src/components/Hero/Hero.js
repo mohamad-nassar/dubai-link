@@ -85,7 +85,7 @@ className="mySwiper"
 <h2 class="text-capitalize d-none d-md-block text-uppercase">Fine Travel</h2>
 <p class="d-block d-md-none text-uppercase">Experience unforgettable holidays at the best rates.</p>
 <p className=" d-none d-md-block">Experience unforgettable holidays at the best rates.</p>
-<Link onClick={<scrollToTop />} to="/tour"><button className="button-fill-primary  btn-hero">Explore</button></Link>
+<Link onClick={<scrollToTop />} to="/dubai-link-travel-and-tours"><button className="button-fill-primary  btn-hero">Explore</button></Link>
 
 
 </div>
@@ -414,7 +414,7 @@ data-aos-duration="1500">
         </Swiper>
 
         <div class="image-box-link d-flex">
-          <Link onClick={<scrollToTop />} to="/tour">
+          <Link onClick={<scrollToTop />} to="/dubai-link-travel-and-tours">
             <img src="assets/images/dubai/dubaihome.png" />
           </Link>
           <Link onClick={<scrollToTop />} to="/tripstick">

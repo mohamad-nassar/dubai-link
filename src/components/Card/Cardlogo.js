@@ -49,7 +49,7 @@ function Cardlogo() {
 
       <div>
       <div class="logo-about">
-      <a href="/tour" onClick={<scrollToTop />}>
+      <a href="/dubai-link-travel-and-tours" onClick={<scrollToTop />}>
       <img class="img-fluid" src="assets/images/dubai/DUbaiLink.svg" />
       </a>
       </div>

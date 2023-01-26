@@ -37,7 +37,7 @@ function CardPending() {
     <div className="container">
     <ul className=" breadcrumbb mt-5">
     <li><Link to="/">Home</Link></li>
-<li><Link to="/tour">Dubai Link Travel & Tours</Link></li>
+<li><Link to="/dubai-link-travel-and-tours">Dubai Link Travel & Tours</Link></li>
     <li>Packages</li>
 </ul>
 </div>

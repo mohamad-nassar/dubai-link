@@ -5,7 +5,27 @@ import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import axios from "axios";
 import url from "../url.jsx";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 function Card2Pend() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
+
+  const closeLogin = () => {
+    setIsOpen(false);
+  };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [phone, setPhone] = useState("");
@@ -79,74 +99,15 @@ function Card2Pend() {
            {renderHTML(desc)}
           </p>
           <div className="row">
-            {/* <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img src="assets/images/dubai/newone/details1.png" alt="" />
-                  </Link>
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $398
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      PRAGUE– VIENNA– BUDAPEST / 8 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div className="col-lg-4 col-md-6">
-              <div className="blog-card-gamma">
-                <div className="blog-thumb">
-                  <Link>
-                    <img src="assets/images/dubai/newone/details6.png" alt="" />
-                  </Link>
-
-                  <div className="blog-lavel2 d-grid">
-                    <Link className="text-white-light" to="#">
-                      From{" "}
-                    </Link>
-                    <Link className="text-weight-bold" to="">
-                      $251
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="media-content">
-                  <Link>
-                    <h2
-                      data-bs-toggle="modal"
-                      data-bs-target="#exampleModalToggle"
-                      className="text-uppercase"
-                    >
-                      ARMENIA / 6 DAYS
-                    </h2>
-                  </Link>
-                </div>
-              </div>
-            </div> */}
+  
             {pack.map((item)=>{
               return[
                 <div className="col-lg-4 col-md-6">
                 <div className="blog-card-gamma">
                   <div className="blog-thumb">
                     <Link>
-                      <img src={url.mediaURL+"/"+item.image} alt=""  data-bs-toggle="modal"
-                        data-bs-target={"#exampleModalToggle"+item.id} onClick={()=>{setPackages(item.id)}} />
+                      <img src={url.mediaURL+"/"+item.image} alt=""  
+                        data-bs-target={item.id} onClick={togglePopup}  />
                     </Link>
   
                     <div className="blog-lavel2 d-grid">
@@ -160,16 +121,115 @@ function Card2Pend() {
                   </div>
   
                   <div className="media-content">
-                    <Link>
-                      <h2
-                        data-bs-toggle="modal"
-                        data-bs-target={"#exampleModalToggle"+item.id}
-                        onClick={()=>{setPackages(item.id)}}
-                        className="text-uppercase"
-                      >
-                        {item.title}
-                      </h2>
-                    </Link>
+     
+                    {isOpen && <div className="overlay"></div>}
+                    <h2 onClick={togglePopup} className="rounded-1 bg-white login-red px-4">{item.title}</h2>
+                    <button onClick={togglePopup}  className="button-fill-primary update-btn2 slide "> <Link data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}>More Details</Link></button>
+      
+                    {isOpen && (
+                      <div className="popup-card">
+                        <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={closeLogin} />
+                        <form action="#" id="contact_form" onSubmit={contactus}>
+              
+  
+                        <h2 class="m-auto text-center mt-5 mb-4 font-weight-bold media-content-h2" style={{"textTransform":"capitalize"}}>
+                          Thank you for choosing this package.
+                        </h2>
+                        <p class="text-center" style={{"textTransform":"capitalize"}}>
+                          {" "}
+                          we appreciate your trust in us. Kindly fill out the form
+                          provided with your details for a smooth and seamless
+                          experience.
+                        </p>
+                        <div className="row">
+                          <div className="col-lg-6">
+                            <div className="custom-input-group">
+                              <input
+                                type="text"
+                                onChange={(e) => {
+                                  setFname(e.target.value);
+                                }}
+                                placeholder="First Name"
+                                id="fname"
+                              />
+                            </div>
+                          </div>
+ 
+                          <div className="col-lg-6">
+                            <div className="custom-input-group">
+                              <input
+                                type="text"
+                                onChange={(e) => {
+                                  setLname(e.target.value);
+                                }}
+                                placeholder="Last Name"
+                                id="lname"
+                              />
+                            </div>
+                          </div>
+  
+                          <div className="col-lg-6">
+                            <div className="custom-input-group">
+                              <input
+                                type="text"
+                                onChange={(e) => {
+                                  setEmail(e.target.value);
+                                }}
+                                placeholder="Email Address"
+                                id="email"
+                              />
+                            </div>
+                          </div>
+ 
+                          <div className="col-lg-6">
+                            <div className="custom-input-group">
+                              <input
+                                type="text"
+                                onChange={(e) => {
+                                  setPhone(e.target.value);
+                                }}
+                                placeholder="Phone Number"
+                                id="phone"
+                              />
+                            </div>
+                          </div>
+ 
+                        </div>
+                        <div className="custom-input-group comments mb-4">
+                          <textarea
+                            cols="10"
+                            onChange={(e) => {
+                              setMsg(e.target.value);
+                            }}
+                            rows="3"
+                            placeholder="Message"
+                          ></textarea>
+                        </div>
+  
+ 
+                        <ReCAPTCHA
+                        sitekey="6LdBWyEkAAAAABGzhkK_QOYUEIeTQRjPlW3Qhm8j"
+                        onChange={onChange}
+                      />
+ 
+ 
+                        <div className="custom-input-group submit-packages mt-4">
+                          <div className="submite-btn">
+                            <button
+                              type="submit"
+                              className="button-fill-primary btn-contact update-btn2 slide mt-1 mb-1"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    
+                      </div>
+                       )}
+      
+      
+                       
                   </div>
                 </div>
               </div>,
@@ -256,11 +316,11 @@ function Card2Pend() {
                        </div>
                        <div className="custom-input-group comments mb-4">
                          <textarea
-                           cols="20"
+                           cols="10"
                            onChange={(e) => {
                              setMsg(e.target.value);
                            }}
-                           rows="7"
+                           rows="3"
                            placeholder="Message"
                          ></textarea>
                        </div>

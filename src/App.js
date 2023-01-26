@@ -83,7 +83,7 @@ function App() {
       
         <Route exact path="/" element={<Home /> } />
         <Route exact path="/about" element={<About /> } />
-        <Route exact path="/tour" element={<Tour /> } />
+        <Route exact path="/dubai-link-travel-and-tours" element={<Tour /> } />
         <Route exact path="/gte" element={<Gte /> } />
         <Route exact path="/tripstick" element={<Tripstick /> } />
         <Route exact path="/niu" element={<Niu /> } />
@@ -92,7 +92,7 @@ function App() {
         <Route exact path="/sts" element={<Sts /> } />
         <Route exact path="/royal-lifestyle" element={<Royal /> } />
         <Route exact path="/contact" element={<Contact /> } />
-        <Route exact path="/tourism" element={<Tourism /> } />
+        <Route exact path="/travel-and-tourism" element={<Tourism /> } />
         <Route exact path="/hospitality" element={<Hospitality /> } />
         <Route exact path="/packages" element={<PackagePending /> } />
         <Route exact path="/package/:id" element={<PackageDetails /> } />

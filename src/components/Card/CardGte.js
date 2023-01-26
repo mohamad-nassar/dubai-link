@@ -25,7 +25,7 @@ function CardGte() {
     <div className="container">
     <ul className=" breadcrumbb mt-5">
     <li><Link to="/">Home</Link></li>
-<li><Link to="/tourism">Travel & Tourism</Link></li>
+<li><Link to="/travel-and-tourism">Travel & Tourism</Link></li>
     <li>GTE</li>
 </ul>
 </div>

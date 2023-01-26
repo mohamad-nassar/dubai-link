@@ -47,13 +47,13 @@ function CardTourism() {
                 <div className="box-tour">
                     <div className="blog-card-gamma logo-no-bottom blog-card-gamma-tourism-bottom">
                         <div className="blog-thumb">
-                            <Link onClick={<scrollToTop />} to="/tour">
+                            <Link onClick={<scrollToTop />} to="/dubai-link-travel-and-tours">
                                 <img src="assets/images/dubai/ll.png" alt="" />
                             </Link>
                             <div className="hover-content mt-4">
                             <h5 data-bs-toggle="modal" data-bs-target="#exampleModal">Dubai Link Travel and Tours </h5>
                       
-                            <button className="button-fill-primary update-btn2 slide "> <Link onClick={<scrollToTop />} to="/tour"> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
+                            <button className="button-fill-primary update-btn2 slide "> <Link onClick={<scrollToTop />} to="/dubai-link-travel-and-tours"> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
                       
                             </div>
                         </div>

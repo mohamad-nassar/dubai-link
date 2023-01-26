@@ -8,7 +8,7 @@ function CardAccom() {
     <ul className=" breadcrumbb mt-5 bread-padding-top">
     <li><Link to="/">Home</Link></li>
 
-    <li><Link to="/tour">Dubai Link Travel & Tours</Link></li>
+    <li><Link to="/dubai-link-travel-and-tours">Dubai Link Travel & Tours</Link></li>
     <li>Accomodation</li>
 </ul>
 </div>
