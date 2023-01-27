@@ -66,7 +66,7 @@ function CardTour() {
       <div className="hover-content mt-4">
               {isOpen && <div className="overlay"></div>}
               <h5 onClick={togglePopup} className="rounded-1 bg-white login-red px-4">{item.title}</h5>
-              <button className="button-fill-primary update-btn2 slide "> <Link data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
+              <button onClick={togglePopup} className="button-fill-primary update-btn2 slide "> <Link data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}> <i className="fa fa-long-arrow-right" aria-hidden="true"></i>More Details</Link></button>
 
               {isOpen && (
                 <div className="popup-card">
