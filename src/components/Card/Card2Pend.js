@@ -11,12 +11,14 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 function Card2Pend() {
 
   const [isOpen, setIsOpen] = useState(false);
+  const [mod, setMod] = useState("");
 
   const togglePopup = () => {
     setIsOpen(!isOpen);
   }
 
   const closeLogin = () => {
+    setMod("");
     setIsOpen(false);
   };
 
@@ -107,7 +109,7 @@ function Card2Pend() {
                   <div className="blog-thumb">
                     <Link>
                       <img src={url.mediaURL+"/"+item.image} alt=""  
-                        data-bs-target={item.id} onClick={togglePopup}  />
+                        data-bs-target={item.id} onClick={()=>{setMod(item.id)}}  />
                     </Link>
   
                     <div className="blog-lavel2 d-grid">
@@ -122,11 +124,11 @@ function Card2Pend() {
   
                   <div className="media-content">
      
-                    {isOpen && <div className="overlay"></div>}
-                    <h2 onClick={togglePopup} className="rounded-1 bg-white login-red px-4">{item.title}</h2>
-                    <button onClick={togglePopup}  className="button-fill-primary update-btn2 slide "> <Link data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}>More Details</Link></button>
+                    {mod==item.id && <div className="overlay"></div>}
+                    <h2 onClick={()=>{setMod(item.id)}} className="rounded-1 bg-white login-red px-4">{item.title}</h2>
+                    <button onClick={()=>{setMod(item.id)}}  className="button-fill-primary update-btn2 slide "> <Link data-bs-toggle="modal" data-bs-target={"#exampleModal"+item.id}>More Details</Link></button>
       
-                    {isOpen && (
+                    {mod==item.id && (
                       <div className="popup-card">
                         <FontAwesomeIcon icon={faTimes} className="close-icon" onClick={closeLogin} />
                         <form action="#" id="contact_form" onSubmit={contactus}>
